@@ -1,0 +1,205 @@
+/*** �곗륫 �ъ씠�� 硫붾돱 ***/
+
+.sidenav2 {
+    width:200px;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 73px;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+    border-left:1px solid rgb(206, 204, 204);
+  }
+  
+  
+  
+  
+  .sidenav2 h3{
+    font-size: 20px;
+    color: #000;
+    padding:10px 20px;
+    font-weight: 600;
+  }
+  
+  .sidenav2 span{
+      color:#000;
+      padding:15px;
+      display: flex;
+      align-items: center;
+      
+  }
+  .sidenav2 span i {
+    margin-right:10px;
+    font-size: 23px;
+    cursor: pointer;
+  }
+  .sidenav2 span img{
+    margin-right:10px;
+  }
+  .sidenav2 span i:last-child{
+    margin-left: auto;
+    
+  }
+  #mySidenav {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  
+  .sidenav2 a i {
+  margin-right:20px;
+  text-align: center;
+  }
+  .sidenav2 span{
+  font-size: 14px;
+  
+  }
+  .sidenav2 ul li a .fa-bars{
+  color:#000;
+  }
+  .sidenav2 ul li a .fa-minus-circle {
+  float:right;
+  text-align: center;
+  color:#000;
+  margin-top: 10px;
+  }
+  
+  
+  
+  /*�ㅽ겕濡ㅻ컮 �④린湲�*/
+  .sidenav2 {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  }
+  .sidenav2::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+  }
+  
+  
+  
+  
+  .sidenav {
+  border-left:1px solid rgb(206, 204, 204);
+  position:absolute;
+  height: 100%;
+  position: fixed;
+  z-index: 10002;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: margin-left 0.5s;
+  padding-top: 60px;
+  }
+  
+  .sidenav .closebtn, .sidenav .openbtn {
+    display: flex;
+  }
+    
+  .sidenav a {
+  padding: 8px 8px 8px 10px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #fff !important;
+  display: block;
+  transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+  color: #f1f1f1 !important;
+  }
+  
+  .sidenav a i.fas.fa-plus-circle {
+  text-align: center;
+  color:#000;
+  }
+  .sidenav a i.fas.fa-times-circle{
+  color:#000;
+  }
+  
+  
+  .ui-state-default{
+  background: none !important;
+  border:none !important;
+  }
+  
+  .connectedSortable li{
+    cursor: move;
+  }
+  
+  /**tooltip**/
+  
+  /* Add this attribute to the element that needs a tooltip */
+  [data-tooltip] {
+    position: relative;
+    z-index: 100003 !important;
+    cursor: pointer;
+  }
+  
+  /* Hide the tooltip content by default */
+  [data-tooltip]:before,
+  [data-tooltip]:after {
+    visibility: hidden;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  /* Position tooltip above the element */
+  [data-tooltip]:before {
+    position: absolute;
+    left: 75px;
+    top:40px;
+    margin-bottom: 5px;
+    margin-left: -80px;
+    padding: 7px;
+    width: 50px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: hsla(0, 0%, 20%, 0.9);
+    color: #fff;
+    content: attr(data-tooltip);
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.2;
+  
+  }
+  
+  /* Triangle hack to make tooltip look like a speech bubble */
+  [data-tooltip]:after {
+    position: absolute;
+    left: 50%;
+    top:36px;
+    margin-left: -5px;
+    width: 0;
+    border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: " ";
+    transform: rotate(180deg);
+    font-size: 0;
+    line-height: 0;
+  
+  }
+  
+  /* Show tooltip content on hover */
+  [data-tooltip]:hover:before,
+  [data-tooltip]:hover:after {
+    visibility: visible;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+  
+  
+  
+  h3.ui-state-disabled.ui-sortable-handle {
+    opacity: 1;
+  }
+  
+  

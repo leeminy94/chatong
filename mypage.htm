@@ -1,0 +1,861 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="title" content=": : 차통 : :  내 차의 모든 것 차통 ">
+    <meta name="description" content="차통은 내 차 시세, 차량 시세, 내 차 정보 조회, 자동차 커뮤니티, 내차 수리 등의 서비스를 제공합니다.">
+    <meta name="keywords" content="차통,차량시세,내차시세,차량수리,중고차 시세,중고차,자동차 커뮤니티,커뮤니티,차량 모델명,차량 모델명 시세,차량 모델명 수리,차량 모델명 중고차 시세,차량 모델명 중고차">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content=": : 차통 : : 내 차의 모든 것 차통 ">
+    <meta property="og:description" content="차통은 내 차 시세, 차량 시세, 내 차 정보 조회, 자동차 커뮤니티, 내차 수리 등의 서비스를 제공합니다.">
+    <meta property="og:image" content="https://chatong.kr/assets/user/images/chatong_mark.png">
+    <meta property="og:url" content="https://www.chartong.com">
+    <meta name="robots" content="index,follow">
+    <meta name="google-site-verification" content="7-j04SDU1rQ8_qp0L7-vy4QHFwzsQ--oC7BKbvPS3Ng" />
+    <meta name="naver-site-verification" content="5370159dd7e440bc37c7202b3988516be1c6d923" />
+
+    <title>: : 차통 : :  내 차의 모든 것 차통 </title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link href="./css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link rel="stylesheet" href="./css/side_menu.css?v=1684225167" />
+    <link rel="stylesheet" href="./css/bottom_tab_bar.css?v=1684225167" />
+    <link rel="stylesheet" href="./css/common.css?ver=1684225167" />
+    <link rel="stylesheet" href="./css/response.css?ver=1684225167" />
+    <link rel="stylesheet" href="./css/stylesheet.css?ver=1684225167" />
+    <link rel="shortcut icon" href="./images/chatong_mark.png">
+
+    <script type="text/javascript" src="./js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui.js"></script>
+    <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="./js/dataTables.bootstrap4.min.js "></script>
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
+    <script type="text/javascript" src="./js/swiper.min.js"></script>
+    <script type="text/javascript" src="./js/load-image.all.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.lazy.plugins.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="./js/moment.js"></script>
+    <script type="text/javascript" src="./js/moment-timezone-with-data.js"></script>
+    <script type="text/javascript" src="./js/Sortable.js"></script>
+    <script type="text/javascript" src="./js/raterater.jquery.js"></script>
+    <script type="text/javascript" src="./js/jquery.lazyload.min.js"></script>
+    <script async src="./js/lazyload.min.js"></script>
+    <script type="text/javascript" src="./js/crypto-js.min.js"></script>
+    <script type="text/javascript" src="./js/loadjavascript.js"></script>
+    <script type="text/javascript" src="./js/utility.js?ver=1684225167"></script>
+    <script type="text/javascript" src="./js/request.js"></script>
+    <script type="text/javascript" src="./js/toast.js"></script>
+    <script type="text/javascript" src="./js/jquery.moment.js"></script>
+
+    <script  type="text/javascript" src="./js/tomato_pay.js?v=1684225167"></script>
+    </head>
+
+<body>
+    <div id="spinner_overay">
+        <div class="spinner"></div>
+        <p style="margin-top:10px;font-size: 15px;color: #222222;font-weight: bold;">처리중입니다...</p>
+    </div>
+    <div class="dialog-notice" id="dialog-notice" style="display:none;">
+    <div class="notice-header notice-header-close">
+        <span  class="notice-header-x"  onclick="closeNoticeDialog('close');">X</span>
+    </div>
+    <div class="notice-content pop-notice-content">
+    <div style="color:#fff;font-size:18px;margin-bottom: 10px;">
+        하단의  
+        <span>
+            <sub style="font-size:15px;">글쓰기<sub>
+            <sup style="position:releative;">
+                <img class="write-icon" src="https://chatong.kr/assets/user/images/ico_community_write.png" alt="" style=" width: 22px;height: 22px;    position: absolute;    bottom: 17px;    right: 7px;">
+            </sup>
+        </span>를  클릭해
+    </div>
+    <div style="margin-bottom: 10px;">
+    <span style="color:#07abed;font-size:18px;">차량 사진, 튜닝 사진 ,디지털 아트</span>
+    <span style="color:#fff;font-size:18px;"> 등</span> 
+    </div>
+    <div style="color:#fff;font-size:18px;margin-bottom: 10px;">나만의  차량 사진을 자유롭게 올리고</div>
+    <div style="color:#fff;font-size:18px;"><span  style="color:#07abed;font-size:18px;margin-bottom: 10px;">NFT도 발행</span> 하세요~</div>
+    </div>
+    <div class="dialog-day-footer" style="width: 100%;display: flex;align-items: center;">
+        <div class="col-xs-6 font-footer pointer" style="   color: #fff;   padding: 23px 15px;font-size:13px;padding-bottom: 53px;"  >
+            <label class="m-checkbox mt-3" style="display: inline-flex;font-weight: initial; ">다시보지 않기 
+                <div class="ml-8" style="display: flex; align-items: center; justify-content: center; cursor: pointer;" >
+                    <input id="autochk" class="cicle-checkbox" type="checkbox" name="" value="" autocomplete="off">
+                    <label for="autochk"></label>
+                </div>
+            </label>
+        </div>
+    </div>
+</div>
+
+<div class="background-overlay"></div>
+
+<div class="dialog-overlay"></div>
+
+<div class="dialog-normal">
+    <div class="dialog-header text-right">
+        <img class="pointer mr-15 mt-10" src="https://chatong.kr/assets/user/images/ico_close_2.svg" alt="" onclick="closeDialog(true);">
+    </div>
+    <div class="dialog-title">
+        <div class="tag-title"></div>
+    </div>
+    <div class="dialog-content"></div>
+    <div class="dialog-footer">
+        <div class="btn"></div>
+        <div class="btn-1" style="color: #222222;"></div>
+        <div class="btn-1" style="background-color: #2b19dd;"></div>
+    </div>
+</div>
+<div class="dialog-buying">
+    <div class="dialog-header"></div>
+    <div class="dialog-title">
+        <div class="tag-title"></div>
+    </div>
+    <div class="dialog-content">
+        <div class="left-content"></div>
+        <div class="right-content">
+            <p class="content-title"></p>
+            <div class="content-price"></div>
+        </div>
+    </div>
+    <div class="dialog-footer">
+        <div class="btn-1" style="color: #222222;" onclick="closeDialog(true);">취소</div>
+        <div class="btn-1" style="background-color: #2b19dd;">구매하기</div>
+    </div>
+</div>
+<div class="ndialog-buying">
+    <div class="dialog-header"></div>
+    <div class="dialog-title">
+        <div class="tag-title"></div>
+    </div>
+    <div class="ndialog-content">
+      <!--   <div class="left-content"></div>
+        <div class="right-content">
+            <p class="content-title"></p>
+            <div class="content-price"></div>
+        </div> -->
+    </div>
+    <div class="dialog-footer">
+        <div class="btn-1" style="color: #222222;" onclick="closeDialog(true);">취소</div>
+        <div class="btn-1" style="background-color: #2b19dd;">구매하기</div>
+    </div>
+</div>
+
+<div class="nft-dialog-normal">
+    <div class="nft-dialog-header text-right">
+        <img class="pointer mr-15 mt-10" src="https://chatong.kr/assets/user/images/ico_close_2.svg" alt="" onclick="closeDialog(true);">
+    </div>
+    <div class="nft-dialog-title">
+        <div class="nft-tag-title"></div>
+    </div>
+    <div class="nft-dialog-content"></div>
+    <div class="nft-dialog-footer">
+        <div class="btn"></div>
+        <div class="btn-1" style="color: #fff; background-color:#6d6d6d"></div>
+        <div class="btn-1" style="background-color: #1c2a64;"></div>
+    </div>
+</div>
+<div class="intergration-dialog-buying">
+    <div class="dialog-header"></div>
+    <div class="dialog-title">
+        <div class="tag-title"></div>
+    </div>
+    <div class="intergration-dialog-content">
+        <div class="left-content"></div>
+        <div class="right-content">
+            <p class="content-title"></p>
+            <div class="content-price"></div>
+        </div>
+    </div>
+    <div class="intergration-dialog-footer">
+        <div class="btn-1" style="color: #fff; background-color:#6d6d6d" onclick="closeDialog(true);">취소</div>
+        <div class="btn-2" style="background-color: #1c2a64;">구매하기</div>
+    </div>
+</div>
+<div class="intergration-ndialog-buying">
+    <div class="dialog-header"></div>
+    <div class="dialog-title">
+        <div class="tag-title"></div>
+    </div>
+    <div class="intergration-ndialog-content">
+     <!--    <div class="left-content"></div>
+        <div class="right-content">
+            <p class="content-title"></p>
+            <div class="content-price"></div>
+        </div> -->
+    </div>
+    <div class="intergration-dialog-footer">
+        <div class="btn-1" style="color: #fff; background-color:#6d6d6d" onclick="closeDialog(true);">취소</div>
+        <div class="btn-2" style="background-color: #1c2a64;">구매하기</div>
+    </div>
+</div>
+
+<div class="dialog-address">
+    <div class="dialog-header text-right">
+        <img class="pointer mr-10 mt-5" src="https://chatong.kr/assets/user/images/ico_close_2.svg" alt="" onclick="closeDialog(true);">
+    </div>
+    <div class="dialog-title">
+        <div class="tag-title"></div>
+    </div>
+    <div class="dialog-content" style="height: 100%;">
+        <div id="wrap" style="display: none; width: 100%; height: 80%; margin: 5px 0; position: relative;"></div>
+    </div>
+</div>
+
+<div class="dialog-vehicles-calc">
+    <div class="dlg-header">
+        <div class="title-content">
+            <p>예상 시세 계산하기</p>
+        </div>
+        <div class="close-content">
+            <img class="ico-close pointer" src="https://chatong.kr/assets/user/images/ico_close_2.svg" alt="" onclick="closeDialog(true);">
+        </div>
+    </div>
+    <div class="dlg-content">
+        <div class="row-item">
+            <div class="left-content">
+                <p>구분 <span style="color: #cf000e;">*</span></p>
+            </div>
+            <div class="right-content">
+                <select id="vehicle-kind" name="" style="height: 38px;" onchange="setChangeVehicleInfo('kind');">
+                    <option value="-1"></option>
+
+                                    </select>
+            </div>
+        </div>
+        <div class="row-item">
+            <div class="left-content">
+                <p>제조사 <span style="color: #cf000e;">*</span></p>
+            </div>
+            <div class="right-content">
+                <select id="vehicle-company" name="" style="height: 38px;" onchange="setChangeVehicleInfo('company');">
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+        <div class="row-item">
+            <div class="left-content">
+                <p>모델 <span style="color: #cf000e;">*</span></p>
+            </div>
+            <div class="right-content">
+                <select id="vehicle-model" name="" style="height: 38px;" onchange="setChangeVehicleInfo('model');">
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+        <div class="row-item">
+            <div class="left-content">
+                <p>등급명 <span style="color: #cf000e;">*</span></p>
+            </div>
+            <div class="right-content">
+                <select id="vehicle-level" name="" style="height: 38px;" onchange="setChangeVehicleInfo('level');">
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+        <div class="row-item">
+            <div class="left-content">
+                <p>세부등급명 <span style="color: #cf000e;">*</span></p>
+            </div>
+            <div class="right-content">
+                <select id="vehicle-level-detail" name="" style="height: 38px;" onchange="setChangeVehicleInfo('detail');">
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+        <div class="row-item">
+            <div class="left-content">
+                <p>연료 <span style="color: #cf000e;">*</span></p>
+            </div>
+            <div class="right-content">
+                <select id="vehicle-fuel" name="" style="height: 38px;" onchange="setChangeVehicleInfo('fuel');">
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+        <div class="row-item">
+            <div class="left-content">
+                <p>배기량 <span style="color: #cf000e;">*</span></p>
+            </div>
+            <div class="right-content">
+                <select id="vehicle-exhaust" name="" style="height: 38px;" onchange="setChangeVehicleInfo('exhaust');">
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+        <div class="row-item">
+            <div class="left-content">
+                <p>연식 <span style="color: #cf000e;">*</span></p>
+            </div>
+            <div class="right-content">
+                <select id="vehicle-year" name="" style="height: 38px;" onchange="setChangeVehicleInfo('year');">
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<div class="dialog-vehicles-agree" id="vehicle-policy-agree">
+    <div class="dlg-header">
+        <img class="ico-close pointer" src="https://chatong.kr/assets/user/images/ico_close_2.svg" alt="" onclick="closeDialog(true);">
+    </div>
+    <div class="dlg-content">
+        <strong>서비스 한계 고지 동의서</strong><br><br>
+        <p>본 동의서는 차통 서비스 이용과 관련하여 필요한 사항을 이용자에게 알리고 동의 구하는 것을 목적으로 합니다. 차통은 보험개발원(이하 “제공자”라 한다)과 계약을 체결하고 제공자로부터 이용자의 차량 정보를 제공받아 전달합니다.</p><br>
+        <p>1. 자동차이력정보는 중고차 품질확인을 위한 보조정보로서만 활용해야 하며, 자동차와 관련된 모든 사고의 발생여부나 품질 등의 확인을 위한 결정적인 판단자료로 사용하여서는 아니 된다.</p><br>
+        <p>2. 자동차이력정보는 1996년 이후 자동차보험으로 보상 처리한 차량의 사고자료를 기초로 구성되었으며, 정보 원천기관인 국토교통부, 손해보험사 등의 사정에 의하여 정보제공이 지연 또는 누락될 경우 자동차이력정보 또한 지연 또는 누락되어 제공 될 수 있다.</p>
+        <p>3. 자동차이력정보 중 손해보험사에 보험사고 발생사실이 미신고 되었거나 또는 보험처리를 하지 않은 사고정보는 제공되지 않으며, 정보 원천기관의 자료입력 또는 자료처리상 오류가 발생한 경우 정보가 잘못 제공될 수 있다.</p><br>
+        <p>4. 자동차이력정보가 본 조에서 정한 사항과 다르게 사용되어 정보의 확대해석이나 오남용, 유출 등으로 발생하는 피해에 대하여 “제공자”는 어떠한 책임도 부담하지 아니한다.</p>
+    </div>
+    <div class="dlg-footer">
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <input id="agree" class="radio-checkbox" type="checkbox" name="" value="" onclick="setCheckAgree(this, 'agree');" autocomplete="off">
+            <label for="agree"></label>
+            <p class="ml-5" style="font-size: 13px; color: #222222;">동의함</p>
+        </div>
+        <div class="ml-20" style="display: flex; align-items: center; justify-content: center;">
+            <input id="degree" class="radio-checkbox" type="checkbox" name="" value="" onclick="setCheckAgree(this, 'degree');" autocomplete="off">
+            <label for="degree"></label>
+            <p class="ml-5" style="font-size: 13px; color: #222222;">동의하지 않음</p>
+        </div>
+    </div>
+    <a href="javascript:setVerifyPhone()" class="submit-btn active" style="position: absolute; bottom: 0; border-radius: 0;">확인</a>
+</div>
+
+<div class="dialog-vehicles-agree" id="nft-policy-dialog">
+    <div class="dlg-header">
+        <img class="ico-close pointer" src="https://chatong.kr/assets/user/images/ico_close_2.svg" alt="" onclick="closeDialog(true);">
+    </div>
+    <div class="dlg-content" style="height: calc(100% - 100px);">
+        <strong>NFT 서비스 이용 약관</strong><br><br>
+        <strong style="color: #2b19dd;">제1조 목적</strong><br>
+        <p>이 약관은 주식회사 토마토파트너(이하 “회사”)가 운영하는 차통(이하 “서비스”)에서 제공하는 서비스와 서비스에 회원 가입을 하고 이를 이용하는 회원(이하 “회원”)의 권리·의무 및 책임사항을 규정함을 목적으로 합니다.</p><br><br>
+        <strong style="color: #2b19dd;">제2조 용어의 정의</strong><br>
+        <p>1. 본 약관에서 사용하는 정의는 다음과 같습니다.</p><br>
+        <p>• “서비스”라 함은 회사가 운영하는 웹사이트(https://chartong.com/) 및 응용프로그램(모바일 어플리케이션)을 통해 판매자가 매각하려는 객체를 NFT 형태의 디지털 자산으로 생성하고 판매하여 회원이 NFT를 구매하고 관리할 수 있는 기능을 제공하는 서비스 및 관련 제반 플랫폼을 의미합니다.</p><br>
+        <p>• “회원”이라 함은 이 약관에 따라 회사와 서비스 이용 계약을 체결하고, 회사가 제공하는 서비스를 이용하는 개인을 말합니다.</p><br>
+        <p>• “NFT”라 함은 회사가 제공하는 서비스를 통해 디지털 콘텐츠, 정보 등이 블록체인 상에 생성된 고유의 속성값을 가지는 전자적 증표/디지털 자산으로 발행된 것을 의미합니다.</p><br>
+        <p>• “발행”이라 함은 NFT를 생성할 수 있는 원본인 디지털 콘텐츠, 정보 등을 회사에서 제공하는 발행 서비스를 통해 블록체인에 정보를 등록하여 NFT를 발행하는 것을 말합니다.</p><br>
+        <p>• “발행자”라 함은 NFT를 생성한 자를 의미합니다. 발행된 NFT는 발행자의 동의가 없는 한 변경될 수 없음을 원칙으로 합니다.</p><br>
+        <p>• "위탁자"라 함은 NFT 형태의 디지털 자산을 서비스를 통해 판매할 목적으로 소유권양수도계약 및 판매 홍보 등을 위한 일체의 권리를 “회사”에게 위임한 개인, 기관, 법인 등을 말합니다.</p><br>
+        <p>• “구매자”라 함은 회사가 제공하는 서비스를 통해 판매자의 NFT 소유권을 구매한 개인 또는 기관, 법인 등 모두를 말합니다.</p><br>
+        <p>• “판매”라 함은 서비스의 판매 중개 기능을 통해 판매자가 구매자에게 NFT를 매도하는 것을 말합니다.</p><br>
+        <p>• “판매자”라 함은 회사가 제공하는 서비스 중 판매 서비스를 통하여 자신이 소유한 NFT 판매를 등록한 회원을 말합니다.</p><br>
+        <p>• “결제서비스”라 함은 회사가 회원 상호간 NFT 거래 시 그 거래 수단인 ‘결제 토큰’의 전송을 위해 제공하는 결제 서비스 및/또는 관련 부가 서비스 일체 시스템 및 절차를 말합니다. 본 서비스 상의 결제 토큰은 현재 통통코인(TTC)과 통통머니(TTM)이며, 향후 다른 결제 토큰이 추가될 수 있습니다.</p><br>
+        <p>• “블록체인”이라 함은 전자적인 블록에 데이터를 담아 각 블록을 체인과 같이 순차적으로 연결하는 기술로, 누구나 열람할 수 있는 장부에 거래 내역을 기록하고 블록체인 네트워크에 참여한 각 컴퓨터에 이를 복제하여 저장하는 분산형 데이터 저장 방식을 말합니다.</p><br>
+        <p>• “스마트 컨트랙트”이라 함은 블록체인 위에서 거래의 일정 조건을 만족시키면 당사자 간에 자동으로 거래가 체결되는 기술을 말합니다.</p><br>
+        <p>• “이용수수료”라 함은 서비스를 통해 제공되는 기본 서비스 및 부가 서비스 이용료를 말합니다.</p><br>
+        <p>• “디지털자산”이라 함은 서비스를 통해 전자적인 방법으로 가치의 저장 수단, 교환의 매개가 되는 것으로 코인, 토큰, NFT 등을 포함한 블록체인 상의 모든 데이터를 의미합니다.</p><br>
+        <p>• "지갑"이라 함은 회원의 계정과 연계된 디지털 자산을 보관하기 위해 사용하는 디지털 지갑을 의미합니다.</p><br>
+        <p>2. 본 약관에서 사용하는 용어의 정의는 전항에서 정하는 것을 제외하고는 관계 법령 및 일 반적인 거래관행에 의합니다.</p><br><br>
+        <strong style="color: #2b19dd;">제3조 약관의 게시와 개정</strong><br>
+        <p>1. 회사는 "전자상거래 등에서의 소비자보호에 관한 법률", "약관의 규제에 관한 법률", "정보통신망 이용촉진 및 정보보호 등에 관한 법률(이하 "정보통신망법")", "개인정보 보호법", "소비자 보호법" 등 관련법을 위배하지 않는 범위에서 이 약관을 개정할 수 있습니다.</p><br>
+        <p>2. 회사가 약관을 개정할 경우에는 적용일자 및 개정 사유를 명시하여 현행 약관과 함께 적용일자 7일 이전부터 적용일자 전일까지 공지합니다. 다만, 회원에게 불리한 약관의 개정의 경우에는 그 시행일자 최소한 30일 이상의 유예기간을 두고 위 1항의 방법으로 공지하며, 로그인 팝업창, 일정기간 내 전자우편 등의 전자적 수단을 통해 따로 명확히 통지하도록 합니다.</p><br>
+        <p>3. 회사가 전항에 따라 개정약관을 공지 또는 통지하면서 회원에게 7일 기간 내에 의사표시를 하지 않으면 의사표시가 표명된 것으로 본다는 뜻을 명확하게 공지 또는 통지하였음에도 회원이 명시적으로 거부의 의사표시를 하지 아니한 경우 회원이 개정약관에 동의한 것으로 봅니다.</p><br>
+        <p>4. 약관을 개정할 경우에는 그 개정약관은 그 적용일자 이후에 체결되는 계약에만 적용되고 그 이전에 이미 체결된 계약에 대해서는 개정 전의 약관조항이 그대로 적용됩니다.</p><br>
+        <p>5. 회원이 개정약관의 적용에 동의하지 않는 경우 회사는 개정 약관의 내용을 적용할 수 없으며, 이 경우 회원은 이용계약을 해지할 수 있습니다. 다만, 기존 약관을 적용할 수 없는 특별한 사정이 있는 경우에는 회사가 이용계약을 해지할 수 있습니다.</p><br><br>
+        <strong style="color: #2b19dd;">제4조 약관 외 준칙 / 약관의 해석</strong><br>
+        <p>1. 본 약관에서 정하지 아니한 사항과 본 약관의 해석에 관하여는 대한민국의 관련 법령 또는 회사가 정한 서비스의 개별 이용약관과 일반 상관례에 의합니다.</p><br>
+        <p>2. 회사는 약관 외에 별도의 운영정책을 두어 서비스를 운영할 수 있습니다.</p><br>
+        <p>3. 이 약관에서 정하지 아니한 사항과 이 약관의 해석에 관하여는 정보통신망 이용촉진 및 정보보호 등에 관한 법률, 전자상거래 등에서의 소비자보호에 관한 법률, 약관의 규제에 관한 법률, 기타 관계법령, 상관례에 따릅니다.</p><br><br>
+        <strong style="color: #2b19dd;">제5조 이용계약 체결(회원가입)</strong><br>
+        <p>1. 회원이 되고자 하는 자(이하 "가입신청자")가 약관의 내용에 대하여 동의를 한 다음 회원가입신청을 하고 회사가 제공하는 약관의 내용에 대하여 동의를 한 다음 회사가 정한 절차에 따라 가입을 신청하고, 회사가 이러한 신청을 승낙함으로써 체결됩니다.</p>
+        <p>2. 회사는 가입신청자의 신청에 대하여 서비스 이용을 승낙함을 원칙으로 합니다. 다만, 회사는 다음 각 호에 해당하는 신청에 대하여는 승낙을 하지 않거나 가입 이후에라도 아래 각 호의 사유가 확인 될 경우 이용계약을 해지할 수 있습니다.</p><br>
+        <p>• 가입신청자가 이 약관에 의하여 이전에 회원자격을 상실한 적이 있는 경우, 단 회사의 회원 재가입 승낙을 얻은 경우에는 예외로 함.</p><br>
+        <p>• 실명이 아니거나 타인의 명의를 이용한 경우</p><br>
+        <p>• 허위의 정보를 기재하거나, 회사가 제시하는 내용을 기재하지 않은 경우</p><br>
+        <p>• 회원 및 이용자의 귀책사유로 인하여 승인이 불가능하거나 기타 규정한 제반 사항을 위반하며 신청하는 경우</p><br>
+        <p>• 회원의 거주지에서 효력이 있는 대한민국 외의 법률에 따라 본 서비스 이용행위가 해당 법률의 위반을 구성하거나 구성할 위험이 있는 경우</p><br>
+        <p>• 가입신청자가 기존의 서비스 탈퇴 신청을 한 후 30일이 경과하지 않은 경우</p><br>
+        <p>• 가입신청자가 기존 서비스에 가입된 상태에서 재가입 또는 신규가입을 시도하는 경우</p><br>
+        <p>3. 제1항에 따른 신청에 있어 회사는 전문기관을 통한 실명확인 및 본인인증을 요청할 수 있습니다.</p><br>
+        <p>4. 회사는 서비스 관련 설비의 여유가 없거나, 기술상 또는 업무상 문제가 있는 경우에는 승낙을 유보할 수 있습니다.</p><br>
+        <p>5. 제2항과 제4항에 따라 회원가입신청의 승낙을 하지 아니하거나 유보한 경우, 회사는 원칙적으로 이를 가입신청자에게 알리도록 합니다.</p><br>
+        <p>6. 회사는 회원이 제공한 정보가 사실과 일치하는지 여부를 확인하기 위하여 법령에 의하여 허용된 범위에서 전문기관을 통한 실명확인 또는 본인인증을 요청할 수 있습니다.</p><br><br>
+        <strong style="color: #2b19dd;">제6조 회원정보 관리</strong><br>
+        <p>1. 회원은 서비스를 통해 언제든지 본인의 개인정보를 열람하고 수정할 수 있습니다. 다만, 서비스 관리를 위해 필요한 일부 정보는 수정이 불가합니다.</p><br>
+        <p>2. 회원은 계정 접근정보를 분실했거나, 도용 당했거나, 제 3자에게 공개되었음을 인지한 경우 이를 즉시 회사에 통지해야 합니다. 이 경우 회사는 즉시 계정 이용중단 등의 조치를 취하며, 회원이 회사에게 통지하지 않아 발생한 손해에 대해 회사는 책임을 지지 않습니다.</p><br>
+        <p>3. 회원은 자신의 계정을 다른 사람에게 판매, 양도, 대여 또는 담보로 제공하거나 다른 사람에게 사용을 허락하여서는 안됩니다.</p><br>
+        <p>4. 회원의 접근정보가 분실, 도용 혹은 공개되어 회원에게 발생한 손해에 대하여 회사는 책임을 부담하지 아니합니다. 다만, 회사의 고의 또는 과실에 의한 경우에는 그러하지 아니합니다.</p><br>
+        <p>5. 회사는 회원의 닉네임이 개인정보 유출 우려가 있거나, 회원 본인이 아닌 타인으로 오해할 소지가 있거나, 반사회적 또는 미풍양속에 어긋나거나, 제 3자의 권리를 침해하거나, 회사 및 회사의 운영자로 오인할 우려가 있는 경우, 해당 닉네임의 이용을 제한할 수 있습니다. 또한 회사는 이 외의 경우라도 회사가 합리적인 판단에 의하여 필요하다고 인정하는 경우 해당 닉네임 사용을 제한할 수 있습니다.</p><br><br>
+        <strong style="color: #2b19dd;">제7조 개인정보의 보호</strong><br>
+        <p>회사는 정보통신망 이용촉진 및 정보보호 등에 관한 법률, 개인정보보호법 등 관련 법령이 정하는 바에 따라 회원의 개인정보를 보호하기 위해 노력합니다. 개인정보의 보호 및 이용에 대해서는 관련 법령 및 회사의 개인정보처리방침이 적용됩니다. 다만, 회사가 제작하여 제공한 화면 이외에 외부로 링크된 화면 등에서는 회사의 개인정보처리방침이 적용되지 않습니다.</p><br><br>
+        <strong style="color: #2b19dd;">제8조 “회원”에 대한 통지</strong><br>
+        <p>1. 회사는 서비스를 운영함에 있어 서비스와 관련한 정보 등을 회원에게 통지하는 경우 회사가 보유한 회원의 전자우편 주소로의 전자우편 발송 또는 핸드폰 SMS 발송, 서비스 화면상에 게시(팝업) 등의 합리적인 방법으로 회원에게 개별 통지합니다.</p><br>
+        <p>2. 회사는 회원 전체에 대한 통지의 경우 7일 이상 서비스 내 공지사항 등에 게시함으로써 전항의 통지에 갈음할 수 있습니다.</p><br><br>
+        <strong style="color: #2b19dd;">제9조 “회사”의 의무</strong><br>
+        <p>1. 회사는 관련 법과 이 약관이 금지하거나 일반 상식에 위배되는 행위를 하지 않으며, 계속적이고 안정적으로 서비스를 제공하기 위하여 최선을 다하여 노력합니다.</p><br>
+        <p>2. 회사는 회원이 안전하게 서비스를 이용할 수 있도록 개인정보 보호를 위해 보안시스템을 갖추어야 하며 개인정보처리방침을 공지하고 준수합니다.</p><br>
+        <p>3. 회사는 서비스 이용과 관련하여 발생하는 회원 및 이용자의 불만 또는 피해구제 요청을 적절하게 처리할 수 있도록 필요한 인력 및 시스템을 구비합니다.</p><br>
+        <p>4. 회사는 서비스 이용과 관련하여 회원으로부터 제기된 의견이나 불만이 정당하다고 인정할 경우에는 이를 처리하여야 합니다. 회원이 제기한 의견이나 불만사항에 대해서는 전자우편 등을 통하여 회원에게 처리 과정 및 결과를 전달합니다.</p><br><br>
+        <strong style="color: #2b19dd;">제10조 “회원”의 의무</strong><br>
+        <p>1. 회원은 다음 행위를 하여서는 안됩니다.</p><br>
+        <p>• 신청 또는 변경 시 허위 내용의 등록</p><br>
+        <p>• 타인의 정보 도용</p><br>
+        <p>• 회사가 게시한 정보의 변경</p><br>
+        <p>• 회사가 정한 정보 이외의 정보(컴퓨터 프로그램 등) 등의 송신 또는 게시</p><br>
+        <p>• 회사와 기타 제 3자의 저작권 등 지식 재산권에 대한 침해</p><br>
+        <p>• 회사 및 기타 제 3자의 명예를 손상시키거나 업무를 방해하는 행위</p><br>
+        <p>• 외설 또는 폭력적인 메시지, 화상, 음성, 기타 사회 질서에 위반하는 정보를 서비스에 공개 또는 게시하는 행위</p><br>
+        <p>• 회사의 동의 없이 영리를 목적으로 서비스를 사용하는 행위</p><br>
+        <p>• 비정상적인 방법으로 토큰 또는 카드를 주고받는 행위</p><br>
+        <p>• 정상적인 서비스 이용이 아닌 투기적 목적으로 거래 등 주고받는 행위</p><br>
+        <p>• 불법 행위에 대한 동기 부여 및 실행에 도움이 되는 용도로 토큰 또는 카드를 사용하는 행위</p><br>
+        <p>• 다단계, 유사 수신 등 불법적인 행위</p><br>
+        <p>• 기타 불법적이거나 부당한 행위</p><br>
+        <p>2. 회원은 관계법, 이 약관의 규정, 이용안내 및 서비스와 관련하여 공지한 주의사항, 회사가 통지하는 사항 등을 준수하여야 하며, 기타 회사의 업무에 방해되는 행위를 하여서는 안됩니다.</p><br><br>
+        <strong style="color: #2b19dd;">제11조 서비스의 제공 및 시스템 제공 등</strong><br>
+        <p>1. 회사는 서비스 및 시스템을 제공함에 있어 범위, 이용 가능 시간 및 횟수 등을 지정할 수 있으며, 회원은 회사가 정하는 서비스 제공 조건에 따라 서비스를 이용할 수 있습니다.</p><br>
+        <p>2. 회사는 컴퓨터 등 정보 통신 설비의 보수 점검, 교체 및 고장, 통신 두절 또는 운영상 합리적인 이유가 있는 경우 서비스의 제공을 일시적으로 중단할 수 있습니다. 이 경우 회사는 제20조에 따른 방법으로 회원에게 통지합니다. 다만, 회사가 사전에 통지할 수 없는 부득이한 사유가 있는 경우 사후에 통지할 수 있습니다.</p><br>
+        <p>3. 회사는 서비스의 제공에 필요한 경우 정기 점검을 실시할 수 있으며, 정기점검시간은 서비스 제공 화면에 공지한 바에 따릅니다. 또한, 정기 점검 시 서비스 이용 일부 또는 전체에 대하여 제한이 발생할 수 있으며, 회사의 고의 또는 과실이 아닌 한 그로 인해 발생한 손해에 대해서는 책임을 지지 않습니다.</p><br>
+        <p>회원이 NFT 발행, 판매, 결제 등 서비스 이용 시 입력 또는 등록한 정보의 정확성에 대한 책임은 회원에게 있으며, 회사는 회원의 잘못으로 인하여 발생하는 문제에 대해서는 책임 지지 않습니다.</p><br>
+        <p>5. 서비스와 연계된 제3자 서비스 등의 장애 또는 점검 등의 사유로 서비스 내 일부 기능에 제한이 발생하는 문제에 대해서는 회사의 고의, 과실이 없는 한 회사는 어떠한 책임도 지지 않습니다. 이 경우, 회사는 회원에게 제20조의 방법으로 해당 사실을 통지합니다.</p><br>
+        <p>6. 서비스는 연중무휴, 1일 24시간 제공함을 원칙으로 합니다.</p><br>
+        <p>7. 서비스와 연계된 제3자의 서비스 등의 장애 또는 점검 등의 사유로 서비스 내 일부 기능에 제한이 발생하는 문제에 대해서는 회사의 고의, 과실이 없는 한 어떠한 책임을 지지 않습니다. 이 경우, 회원에게 해당 사실을 공지 또는 통지합니다.</p><br><br>
+        <strong style="color: #2b19dd;">제12조 NFT 발행, 판매 및 결제의 성질과 목적</strong><br>
+        <p>1. 발행 서비스는 회원이 직접 NFT를 발행하고 관리할 수 있는 기능을 회사가 제공하는 것입니다. 그러나 회사는 발행 서비스를 제공하는 외에 회원의 NFT발행 또는 관리를 대행하거나 위탁받아 운영하지 않습니다.</p><br>
+        <p>2. 판매 서비스는 회사가 회원 각자의 자기 결정에 의하여 회원 상호간에 NFT 거래가 이루어질 수 있도록 온라인 거래 장소(마켓플레이스, Marketplace)를 제공하는 것이며, 결제서비스는 회원 상호 간에 거래에 있어 안전하고 편리한 결제 토큰 전송이 이루어질 수 있는 수단을 제공하는 것입니다. 회원 간 거래와 관련된 책임은 거래 당사자인 회원들 스스로가 부담합니다.</p><br>
+        <p>3. 회원이 서비스 이용에 필요한 디지털 자산 보관 및 관리 및 관련/제반 서비스의 이용은 해당 서비스의 약관에 따르며, 회원은 안정적인 서비스 이용을 위하여 해당 관련/제반 서비스 데이터에 대한 백업 및 저장 의무가 있습니다. 또, 회사는 회원의 부주의로 인한 발생한 해당 관련/제반 서비스 데이터 손실로 인한 손해에 대하여 책임을 부담하지 아니합니다.</p><br><br>
+        <strong style="color: #2b19dd;">제13조 NFT 발행 서비스의 이용</strong><br>
+        <p>1. 회사가 제공하는 NFT 발행 서비스는 블록체인 상에서 취급되는 NFT를 발행하는 것으로 세부적인 서비스의 종류와 내용은 변경될 수 있습니다. 회사는 발행 절차와 방법 등에 대한 사항을 안내하며, 회원은 회사가 공지한 발행에 관한 사항을 사전에 충분히 이해하고 NFT 발행 서비스를 이용하여야 합니다. 회사는 회원이 관련 사항을 충분히 숙지하지 아니하여 발생하는 문제에 대해서는 회사의 고의 또는 과실이 없는 한 어떠한 책임도 지지 않습니다.</p><br>
+        <p>2. 회사는 회원이 다음 각 호의 내용을 포함하여 NFT를 발행한 사실을 직접 인지하였거나 제3자의 신고로 인지한 경우 회사의 확인 ∙ 검토 결과에 따라 별도의 사전 고지 없이 NFT를 서비스 상 노출되지 않게 하고 NFT에 대한 소각을 요청할 수 있으며, 판매 서비스 이용의 제한, 회원자격의 정지 또는 이용계약을 해지할 수 있습니다.</p><br>
+        <p>• 욕설, 비속어, 은어 등이나 타인에게 성적 수치심이나 불쾌감·혐오감을 유발할 수 있는 내용</p><br>
+        <p>• 지역·장애·인종·출신 국가·성별·나이·직업·종교 등을 차별하거나 이에 대한 편견을 조장하는 내용</p><br>
+        <p>• 불법적인 사행성, 도박 관련 내용, 불법 제품 또는 인터넷에서 판매 금지된 물품을 홍보하거나 이를 암시하는 내용</p><br>
+        <p>• 타인의 지식재산권(특허권, 상표권, 저작권 등)을 침해하거나 국내외에서 널리 알려진 타인의 상표, 상호 등을 도용한 내용</p><br>
+        <p>• 투자상품으로 해석되거나 투자 상품성 요소가 내포된 내용</p><br>
+        <p>• 위법 행위에 대한 동기 부여 및 실행에 도움이 되는 내용</p><br>
+        <p>• 특정 인물이나 서비스의 명칭 등을 사칭하는 내용</p><br>
+        <p>• 그 외 회사가 판단했을 때 상식과 사회 통념에 반하는 내용</p><br>
+        <p>• 전항에 따라 NFT가 차단 또는 삭제된 경우와 이로 인해 판매가 취소되거나 중지된 경우, 그 발행 및 판매 서비스에 이용된 블록체인 이용료(Gas Fee)는 환불되지 않으며, 또 당해 NFT 발행자가 NFT의 차단 또는 삭제 등으로 인해 발생한 민형사상 재산 피해에 대한 책임을 부담합니다.</p><br>
+        <p>• 회사는 회원이 간편하게 NFT를 발행하고 관리할 수 있도록 기술을 제공하는 것으로 회원이 직접 NFT를 발행하고 관리하는 것을 원칙으로 하며, 회원의 NFT 발행 및 관리를 대행하거나 위탁하여 운영하지 않습니다.</p><br>
+        <p>3. 발행자가 서비스를 통해 발행한 NFT에 대한 내용, 목적 등에 대한 보증 및 이행 의무는 회원에게 있으며, 회사는 회원이 발행한 NFT에 대하여 어떠한 보증을 하거나 일체의 책임을 지지 않습니다.</p><br><br>
+        <strong style="color: #2b19dd;">제14조 판매의 방식</strong><br>
+        <p>1. 회사가 회원에게 서비스를 제공함에 있어 회원이 고의적으로 또는 과실로 구매 후 환불 신청을 반복하는 등의 행위를 확인하거나 또는 회원의 서비스 부정 사용이 우려되는 경우, 회사는 해당 회원에게 서비스 제공을 일정기간 또는 영구적으로 제한할 수 있습니다. 회원은 이용제한 조치에 대한 이의 제기를 할 수 있으며, 회사는 회원이 이의제기한 사실을 통보 받은 후 2주간의 확인 기간을 거쳐 확인 결과를 회원에게 통지합니다.</p><br><br>
+        <strong style="color: #2b19dd;">제15조 판매 서비스의 이용</strong><br>
+        <p>1. 회원은 회사가 제공하는 방식을 통해 판매서비스를 이용할 수 있습니다. 다만, 회사가 지정하는 경우 판매자가 될 수 있는 별도의 자격요건이 설정될 수 있으며, 회사는 자격요건 등 이용조건을 서비스화면 또는 이메일 등으로 공지합니다.</p><br>
+        <p>2. 판매 서비스를 이용해 NFT를 구매할 때 소요되는 블록체인 이용료(망 수수료, NFT 이전 수수료)는 구매자가 부담하여야 합니다.</p><br>
+        <p>3. 회원이 판매 서비스를 통하여 NFT를 거래하는 경우, 반드시 회사가 제공하는 판매서비스를 통해 거래를 완료하여야 합니다. 회사는 회원 간 직거래로 인하여 발생한 문제에 대하여 책임지지 않습니다.</p><br>
+        <p>4. 판매자가 제공한 판매 정보에 관한 책임은 판매자가 부담합니다.</p><br>
+        <p>5. 회사는 중개 업체이므로 세무 처리의 주체가 아니며, 세금과 관련한 자문을 제공하지 않습니다. NFT 거래로 발생할 수 있는 소득세 등 제세공과 사무는 회원이 직접 확인 후 처리하여야 합니다.</p><br>
+        <p>6. 회사는 판매 서비스를 통한 거래의 안전성과 신뢰성을 위하여 회원자격을 정지하거나 회원의 판매 서비스의 이용을 제한하는 등 필요한 조치를 취할 수 있습니다. 회원자격이 정지된 회원은 서비스 이용에 제한을 받을 수 있습니다. 회사가 회원자격을 정지하거나 판매 서비스의 이용제한, 기타 필요한 조치를 취할 경우 회사는 이 약관에 특별한 규정이 없는 한 사전에 당해 회원에게 서비스화면 또는 SMS, 기타의 방법을 통하여 통보하며, 회원의 연락이 두절되거나 긴급을 요하는 등 부득이 한 경우 선 조치 후 통보할 수 있습니다. 판매 서비스 이용 제한 및 회원자격의 정지는 일시 또는 영구적일 수 있으며, 회원이 소명서를 제출하는 등 회사가 정하는 기준을 충족하는 경우 이를 해소할 수 있습니다.</p><br>
+        <p>7. 회원 재가입 시에도 이전에 부과된 서비스 이용 제한과 회원자격정지 등의 조치는 그대로 유지됩니다.</p><br>
+        <p>8. 판매 서비스 이용이 제한된 회원에게 완료되지 않은 판매가 있는 경우 회사는 구매자의 보호를 위해 판매 중인 NFT가 서비스 상에 노출되지 않도록 할 수 있습니다. 그 이전에 입찰을 한 회원이 있을 경우 판매 서비스 이용이 제한된 회원은 구매자의 보호를 위한 필요 조치를 취해야 합니다. NFT가 판매에 부적합 것으로 밝혀진 경우 판매 서비스 이용이 제한된 회원이 구매자의 손해에 대한 책임을 부담합니다. 이 경우 회사는 손해를 입은 당사자에게 이용이 제한된 회원의 일부 정보를 제공할 수 있습니다.</p><br><br>
+        <strong style="color: #2b19dd;">제16조 대리 및 보증의 부인 / 디지털콘텐츠의 보증</strong><br>
+        <p>1. 회사는 통신 판매 중개자로서 회원 상호간의 거래를 위한 온라인 거래장소(Marketplace)를 제공할 뿐이므로 NFT를 판매하거나 구매하는 회원을 대리하지 않습니다. 또한, 회사의 어떠한 행위도 판매자 또는 구매자를 대리하는 행위로 간주되지 않습니다.</p><br>
+        <p>2. 회사는 판매 서비스를 통하여 이루어지는 회원 간 NFT 판매 및 구매와 관련하여 판매의사 또는 구매의사의 존부 및 진정성, NFT의 가치, 완전성, 안전성, 적법성 및 타인의 권리에 대한 비침해성, 회원이 입력하는 정보 및 그 정보를 통하여 링크된 URL에 게재된 자료의 진실성 등 일체에 대하여 보증하지 아니하며, 이와 관련한 일체의 위험과 책임은 NFT거래 당사자인 회원이 부담합니다.</p><br>
+        <p>3. 회사는 회원이 게재하는 NFT설명 등의 제반 정보를 통제하거나 관리하지 않습니다. 다만, 회사가 회원이 게재한 정보의 내용이 타인의 명예, 권리를 침해하거나 위법하다고 판단하는 경우에 서비스 상 노출제한, 판매취소, 판매중지, 기타 필요한 조치를 취할 수 있습니다.</p><br>
+        <p>4. 회사가 보증책임을 지는 경우 그 보증금액은 어떠한 경우라도 구매자가 지급한 실제 TTC또는 TTM 수량의 범위를 초과하지 않으며, TTC 또는 TTM의 가치의 변동에 따른 손해 등에 대해 회사는 책임을 지지 않습니다.</p><br><br>
+        <strong style="color: #2b19dd;">제17조 결제 서비스의 이용</strong><br>
+        <p>1. 회사는 NFT거래에 사용되는 결제 토큰 및 NFT의 수령, 임시 보관 및 송금 업무로 이루어지는 결제서비스를 제공합니다. 이러한 결제서비스는 중개서비스를 통하여 이루어지는 회원 간의 거래의 안전성과 신뢰성을 도모하고 거래 당사자를 보호하기 위한 목적에서 제공됩니다. 회사는 회원이 정한 조건으로 NFT거래와 결제 토큰 지급 및 수령이 이루어지는 스마트 컨트랙트의 실행을 지원하는 것이므로 판매자 또는 구매자를 대리, 대행하거나 그 이행을 보조하는 것은 아닙니다.</p><br>
+        <p>2. 명시적으로 회원의 직거래를 허용하지 않는 NFT에 대하여 결제서비스를 통하지 않는 직거래를 유도하는 경우, 회사는 당해 거래의 취소, 판매 중지 등 필요한 조치를 취할 수 있습니다.</p><br>
+        <p>3. 회사가 제공하는 결제서비스를 이용하지 않은 거래에 대해 회사는 일체의 책임을 지지 않습니다.</p><br>
+        <p>4. 회사가 제공하는 결제 서비스를 오용, 악용함으로써 사회질서, 미풍양속을 침해하거나 침해할 우려가 있거나, 회사가 결제서비스를 제공하기 어려운 상황이 발생하는 경우 회사는 결제서비스의 일부 또는 전부를 제공하지 않거나 이용을 제한할 수 있습니다.</p><br><br>
+        <strong style="color: #2b19dd;">제18조 판매 관련 수수료</strong><br>
+        <p>1. 회원이 NFT 상품 판매 시 판매금의 30%는 회사 수수료로 책정되어 판매금액 정산할 시 판매금 총액에서 수수료를 제한 금액을 지급합니다.</p><br>
+        <p>2. 서비스 이용 수수료 조정은 회사의 재량이나, 회사는 수수료(율) 변경을 하는 경우 회사는 제8조["회원"에 대한 통지]에 따른 방법으로 최소한 변경 7일 전에 공지합니다.</p><br>
+        <p>3. 회사는 특정조건에 해당하는 경우에는 서비스 이용 수수료를 회원과의 협의에 의하여 정할 수 있습니다.</p><br><br>
+        <strong style="color: #2b19dd;">제19조 서비스의 변경 및 중단</strong><br>
+        <p>1. 회사는 다음과 같은 경우 또는 이에 해당하는 사유가 존재한다고 볼 만한 합리적 이유가 있는 경우에 운영상, 기술상의 필요에 따라 제공하고 있는 전부 또는 일부 서비스를 변경할 수 있습니다.</p><br>
+        <p>• 회사가 안정적인 서비스 제공을 위하여 서비스의 내용, 운영상, 기술상 관리 혹은 변경 혹은 관리가 필요하다고 판단하는 경우</p><br>
+        <p>• 서비스를 이용한 불법적인 행위가 발생한 경우</p><br>
+        <p>• 컴퓨터 등 정보 통신 설비의 보수 점검, 장비의 교체 및 고장, 통신의 두절 등의 사유가 발생한 경우</p><br>
+        <p>• 서비스를 위한 설비 등의 유지 보수 등으로 인한 부득이한 사정이 있는 경우</p><br>
+        <p>• 정전, 제반 설비의 장애 또는 이용량의 폭주 등으로 정상적인 서비스 이용에 지장이 있는 경우 또는 지역 등 범위적인 네트워크 장애가 발생하는 경우</p><br>
+        <p>• 회사의 운영 정책에 반하는 회원의 행위가 있는 경우</p><br>
+        <p>• 경영상 이유 등으로 서비스를 제공할 수 없는 부득이한 사정이 발생한 경우</p><br>
+        <p>• 기타 천재지변, 국가 비상 사태, 각 국가의 법령/정책 상의 규제 또는 제한 등 불가 항력적 사유가 있는 경우</p><br>
+        <p>2. 서비스의 내용, 이용방법, 이용시간에 대하여 변경이 있는 경우에는 변경사유, 변경될 서비스의 내용 및 일시 등을 회사는 제8조["회원"에 대한 통지]에 따른 방법으로 회원에게 사전통지 합니다. 단, 회사가 통제할 수 없는 사유 또는 긴급사유 등으로 인하여 회원에 대한 공지 또는 통지가 불가능한 경우에는 먼저 서비스 내용을 변경한 후 통지할 수 있습니다.</p><br>
+        <p>3. 회사는 제공하는 서비스의 일부 또는 전부를 회사의 정책 및 운영의 필요상 수정, 중단, 변경할 수 있으며, 회원은 서비스 변경에 동의하지 않을 경우 회사에 거부 의사를 표시하고 이용계약을 해지할 수 있습니다. 회사는 본 서비스의 변경, 중단으로 발생하는 문제에 대해서 회사의 고의 또는 과실이 없는 한 어떠한 책임도 지지 않습니다.</p><br>
+    </div>
+    <a href="javascript:closeDialog(true)" class="submit-btn active" style="position: absolute; bottom: 0; border-radius: 0;">확인</a>
+</div>
+
+<div class="dialog-vehicles-agree" id="nft-integration-policy-dialog">
+    <div class="dlg-header">
+        <img class="ico-close pointer" src="https://chatong.kr/assets/user/images/ico_close_2.svg" alt="" onclick="closeDialog(true);">
+    </div>
+    <div class="dlg-content" style="height: calc(100% - 100px);">
+        <strong>NFT 서비스 이용 약관</strong><br><br>
+        <strong style="color: #2b19dd;">제1조 목적</strong><br>
+        <p>이 약관은 주식회사 토마토파트너(이하 “회사”)가 운영하는 차통(이하 “서비스”)에서 제공하는 서비스와 서비스에 회원 가입을 하고 이를 이용하는 회원(이하 “회원”)의 권리·의무 및 책임사항을 규정함을 목적으로 합니다.</p><br><br>
+        <strong style="color: #2b19dd;">제2조 용어의 정의</strong><br>
+        <p>1. 본 약관에서 사용하는 정의는 다음과 같습니다.</p><br>
+        <p>• “서비스”라 함은 회사가 운영하는 웹사이트(https://chartong.com/) 및 응용프로그램(모바일 어플리케이션)을 통해 판매자가 매각하려는 객체를 NFT 형태의 디지털 자산으로 생성하고 판매하여 회원이 NFT를 구매하고 관리할 수 있는 기능을 제공하는 서비스 및 관련 제반 플랫폼을 의미합니다.</p><br>
+        <p>• “회원”이라 함은 이 약관에 따라 회사와 서비스 이용 계약을 체결하고, 회사가 제공하는 서비스를 이용하는 개인을 말합니다.</p><br>
+        <p>• “NFT”라 함은 회사가 제공하는 서비스를 통해 디지털 콘텐츠, 정보 등이 블록체인 상에 생성된 고유의 속성값을 가지는 전자적 증표/디지털 자산으로 발행된 것을 의미합니다.</p><br>
+        <p>• “발행”이라 함은 NFT를 생성할 수 있는 원본인 디지털 콘텐츠, 정보 등을 회사에서 제공하는 발행 서비스를 통해 블록체인에 정보를 등록하여 NFT를 발행하는 것을 말합니다.</p><br>
+        <p>• “발행자”라 함은 NFT를 생성한 자를 의미합니다. 발행된 NFT는 발행자의 동의가 없는 한 변경될 수 없음을 원칙으로 합니다.</p><br>
+        <p>• "위탁자"라 함은 NFT 형태의 디지털 자산을 서비스를 통해 판매할 목적으로 소유권양수도계약 및 판매 홍보 등을 위한 일체의 권리를 “회사”에게 위임한 개인, 기관, 법인 등을 말합니다.</p><br>
+        <p>• “구매자”라 함은 회사가 제공하는 서비스를 통해 판매자의 NFT 소유권을 구매한 개인 또는 기관, 법인 등 모두를 말합니다.</p><br>
+        <p>• “판매”라 함은 서비스의 판매 중개 기능을 통해 판매자가 구매자에게 NFT를 매도하는 것을 말합니다.</p><br>
+        <p>• “판매자”라 함은 회사가 제공하는 서비스 중 판매 서비스를 통하여 자신이 소유한 NFT 판매를 등록한 회원을 말합니다.</p><br>
+        <p>• “결제서비스”라 함은 회사가 회원 상호간 NFT 거래 시 그 거래 수단인 ‘결제 토큰’의 전송을 위해 제공하는 결제 서비스 및/또는 관련 부가 서비스 일체 시스템 및 절차를 말합니다. 본 서비스 상의 결제 토큰은 현재 통통코인(TTC)과 통통머니(TTM)이며, 향후 다른 결제 토큰이 추가될 수 있습니다.</p><br>
+        <p>• “블록체인”이라 함은 전자적인 블록에 데이터를 담아 각 블록을 체인과 같이 순차적으로 연결하는 기술로, 누구나 열람할 수 있는 장부에 거래 내역을 기록하고 블록체인 네트워크에 참여한 각 컴퓨터에 이를 복제하여 저장하는 분산형 데이터 저장 방식을 말합니다.</p><br>
+        <p>• “스마트 컨트랙트”이라 함은 블록체인 위에서 거래의 일정 조건을 만족시키면 당사자 간에 자동으로 거래가 체결되는 기술을 말합니다.</p><br>
+        <p>• “이용수수료”라 함은 서비스를 통해 제공되는 기본 서비스 및 부가 서비스 이용료를 말합니다.</p><br>
+        <p>• “디지털자산”이라 함은 서비스를 통해 전자적인 방법으로 가치의 저장 수단, 교환의 매개가 되는 것으로 코인, 토큰, NFT 등을 포함한 블록체인 상의 모든 데이터를 의미합니다.</p><br>
+        <p>• "지갑"이라 함은 회원의 계정과 연계된 디지털 자산을 보관하기 위해 사용하는 디지털 지갑을 의미합니다.</p><br>
+        <p>2. 본 약관에서 사용하는 용어의 정의는 전항에서 정하는 것을 제외하고는 관계 법령 및 일 반적인 거래관행에 의합니다.</p><br><br>
+        <strong style="color: #2b19dd;">제3조 약관의 게시와 개정</strong><br>
+        <p>1. 회사는 "전자상거래 등에서의 소비자보호에 관한 법률", "약관의 규제에 관한 법률", "정보통신망 이용촉진 및 정보보호 등에 관한 법률(이하 "정보통신망법")", "개인정보 보호법", "소비자 보호법" 등 관련법을 위배하지 않는 범위에서 이 약관을 개정할 수 있습니다.</p><br>
+        <p>2. 회사가 약관을 개정할 경우에는 적용일자 및 개정 사유를 명시하여 현행 약관과 함께 적용일자 7일 이전부터 적용일자 전일까지 공지합니다. 다만, 회원에게 불리한 약관의 개정의 경우에는 그 시행일자 최소한 30일 이상의 유예기간을 두고 위 1항의 방법으로 공지하며, 로그인 팝업창, 일정기간 내 전자우편 등의 전자적 수단을 통해 따로 명확히 통지하도록 합니다.</p><br>
+        <p>3. 회사가 전항에 따라 개정약관을 공지 또는 통지하면서 회원에게 7일 기간 내에 의사표시를 하지 않으면 의사표시가 표명된 것으로 본다는 뜻을 명확하게 공지 또는 통지하였음에도 회원이 명시적으로 거부의 의사표시를 하지 아니한 경우 회원이 개정약관에 동의한 것으로 봅니다.</p><br>
+        <p>4. 약관을 개정할 경우에는 그 개정약관은 그 적용일자 이후에 체결되는 계약에만 적용되고 그 이전에 이미 체결된 계약에 대해서는 개정 전의 약관조항이 그대로 적용됩니다.</p><br>
+        <p>5. 회원이 개정약관의 적용에 동의하지 않는 경우 회사는 개정 약관의 내용을 적용할 수 없으며, 이 경우 회원은 이용계약을 해지할 수 있습니다. 다만, 기존 약관을 적용할 수 없는 특별한 사정이 있는 경우에는 회사가 이용계약을 해지할 수 있습니다.</p><br><br>
+        <strong style="color: #2b19dd;">제4조 약관 외 준칙 / 약관의 해석</strong><br>
+        <p>1. 본 약관에서 정하지 아니한 사항과 본 약관의 해석에 관하여는 대한민국의 관련 법령 또는 회사가 정한 서비스의 개별 이용약관과 일반 상관례에 의합니다.</p><br>
+        <p>2. 회사는 약관 외에 별도의 운영정책을 두어 서비스를 운영할 수 있습니다.</p><br>
+        <p>3. 이 약관에서 정하지 아니한 사항과 이 약관의 해석에 관하여는 정보통신망 이용촉진 및 정보보호 등에 관한 법률, 전자상거래 등에서의 소비자보호에 관한 법률, 약관의 규제에 관한 법률, 기타 관계법령, 상관례에 따릅니다.</p><br><br>
+        <strong style="color: #2b19dd;">제5조 이용계약 체결(회원가입)</strong><br>
+        <p>1. 회원이 되고자 하는 자(이하 "가입신청자")가 약관의 내용에 대하여 동의를 한 다음 회원가입신청을 하고 회사가 제공하는 약관의 내용에 대하여 동의를 한 다음 회사가 정한 절차에 따라 가입을 신청하고, 회사가 이러한 신청을 승낙함으로써 체결됩니다.</p>
+        <p>2. 회사는 가입신청자의 신청에 대하여 서비스 이용을 승낙함을 원칙으로 합니다. 다만, 회사는 다음 각 호에 해당하는 신청에 대하여는 승낙을 하지 않거나 가입 이후에라도 아래 각 호의 사유가 확인 될 경우 이용계약을 해지할 수 있습니다.</p><br>
+        <p>• 가입신청자가 이 약관에 의하여 이전에 회원자격을 상실한 적이 있는 경우, 단 회사의 회원 재가입 승낙을 얻은 경우에는 예외로 함.</p><br>
+        <p>• 실명이 아니거나 타인의 명의를 이용한 경우</p><br>
+        <p>• 허위의 정보를 기재하거나, 회사가 제시하는 내용을 기재하지 않은 경우</p><br>
+        <p>• 회원 및 이용자의 귀책사유로 인하여 승인이 불가능하거나 기타 규정한 제반 사항을 위반하며 신청하는 경우</p><br>
+        <p>• 회원의 거주지에서 효력이 있는 대한민국 외의 법률에 따라 본 서비스 이용행위가 해당 법률의 위반을 구성하거나 구성할 위험이 있는 경우</p><br>
+        <p>• 가입신청자가 기존의 서비스 탈퇴 신청을 한 후 30일이 경과하지 않은 경우</p><br>
+        <p>• 가입신청자가 기존 서비스에 가입된 상태에서 재가입 또는 신규가입을 시도하는 경우</p><br>
+        <p>3. 제1항에 따른 신청에 있어 회사는 전문기관을 통한 실명확인 및 본인인증을 요청할 수 있습니다.</p><br>
+        <p>4. 회사는 서비스 관련 설비의 여유가 없거나, 기술상 또는 업무상 문제가 있는 경우에는 승낙을 유보할 수 있습니다.</p><br>
+        <p>5. 제2항과 제4항에 따라 회원가입신청의 승낙을 하지 아니하거나 유보한 경우, 회사는 원칙적으로 이를 가입신청자에게 알리도록 합니다.</p><br>
+        <p>6. 회사는 회원이 제공한 정보가 사실과 일치하는지 여부를 확인하기 위하여 법령에 의하여 허용된 범위에서 전문기관을 통한 실명확인 또는 본인인증을 요청할 수 있습니다.</p><br><br>
+        <strong style="color: #2b19dd;">제6조 회원정보 관리</strong><br>
+        <p>1. 회원은 서비스를 통해 언제든지 본인의 개인정보를 열람하고 수정할 수 있습니다. 다만, 서비스 관리를 위해 필요한 일부 정보는 수정이 불가합니다.</p><br>
+        <p>2. 회원은 계정 접근정보를 분실했거나, 도용 당했거나, 제 3자에게 공개되었음을 인지한 경우 이를 즉시 회사에 통지해야 합니다. 이 경우 회사는 즉시 계정 이용중단 등의 조치를 취하며, 회원이 회사에게 통지하지 않아 발생한 손해에 대해 회사는 책임을 지지 않습니다.</p><br>
+        <p>3. 회원은 자신의 계정을 다른 사람에게 판매, 양도, 대여 또는 담보로 제공하거나 다른 사람에게 사용을 허락하여서는 안됩니다.</p><br>
+        <p>4. 회원의 접근정보가 분실, 도용 혹은 공개되어 회원에게 발생한 손해에 대하여 회사는 책임을 부담하지 아니합니다. 다만, 회사의 고의 또는 과실에 의한 경우에는 그러하지 아니합니다.</p><br>
+        <p>5. 회사는 회원의 닉네임이 개인정보 유출 우려가 있거나, 회원 본인이 아닌 타인으로 오해할 소지가 있거나, 반사회적 또는 미풍양속에 어긋나거나, 제 3자의 권리를 침해하거나, 회사 및 회사의 운영자로 오인할 우려가 있는 경우, 해당 닉네임의 이용을 제한할 수 있습니다. 또한 회사는 이 외의 경우라도 회사가 합리적인 판단에 의하여 필요하다고 인정하는 경우 해당 닉네임 사용을 제한할 수 있습니다.</p><br><br>
+        <strong style="color: #2b19dd;">제7조 개인정보의 보호</strong><br>
+        <p>회사는 정보통신망 이용촉진 및 정보보호 등에 관한 법률, 개인정보보호법 등 관련 법령이 정하는 바에 따라 회원의 개인정보를 보호하기 위해 노력합니다. 개인정보의 보호 및 이용에 대해서는 관련 법령 및 회사의 개인정보처리방침이 적용됩니다. 다만, 회사가 제작하여 제공한 화면 이외에 외부로 링크된 화면 등에서는 회사의 개인정보처리방침이 적용되지 않습니다.</p><br><br>
+        <strong style="color: #2b19dd;">제8조 “회원”에 대한 통지</strong><br>
+        <p>1. 회사는 서비스를 운영함에 있어 서비스와 관련한 정보 등을 회원에게 통지하는 경우 회사가 보유한 회원의 전자우편 주소로의 전자우편 발송 또는 핸드폰 SMS 발송, 서비스 화면상에 게시(팝업) 등의 합리적인 방법으로 회원에게 개별 통지합니다.</p><br>
+        <p>2. 회사는 회원 전체에 대한 통지의 경우 7일 이상 서비스 내 공지사항 등에 게시함으로써 전항의 통지에 갈음할 수 있습니다.</p><br><br>
+        <strong style="color: #2b19dd;">제9조 “회사”의 의무</strong><br>
+        <p>1. 회사는 관련 법과 이 약관이 금지하거나 일반 상식에 위배되는 행위를 하지 않으며, 계속적이고 안정적으로 서비스를 제공하기 위하여 최선을 다하여 노력합니다.</p><br>
+        <p>2. 회사는 회원이 안전하게 서비스를 이용할 수 있도록 개인정보 보호를 위해 보안시스템을 갖추어야 하며 개인정보처리방침을 공지하고 준수합니다.</p><br>
+        <p>3. 회사는 서비스 이용과 관련하여 발생하는 회원 및 이용자의 불만 또는 피해구제 요청을 적절하게 처리할 수 있도록 필요한 인력 및 시스템을 구비합니다.</p><br>
+        <p>4. 회사는 서비스 이용과 관련하여 회원으로부터 제기된 의견이나 불만이 정당하다고 인정할 경우에는 이를 처리하여야 합니다. 회원이 제기한 의견이나 불만사항에 대해서는 전자우편 등을 통하여 회원에게 처리 과정 및 결과를 전달합니다.</p><br><br>
+        <strong style="color: #2b19dd;">제10조 “회원”의 의무</strong><br>
+        <p>1. 회원은 다음 행위를 하여서는 안됩니다.</p><br>
+        <p>• 신청 또는 변경 시 허위 내용의 등록</p><br>
+        <p>• 타인의 정보 도용</p><br>
+        <p>• 회사가 게시한 정보의 변경</p><br>
+        <p>• 회사가 정한 정보 이외의 정보(컴퓨터 프로그램 등) 등의 송신 또는 게시</p><br>
+        <p>• 회사와 기타 제 3자의 저작권 등 지식 재산권에 대한 침해</p><br>
+        <p>• 회사 및 기타 제 3자의 명예를 손상시키거나 업무를 방해하는 행위</p><br>
+        <p>• 외설 또는 폭력적인 메시지, 화상, 음성, 기타 사회 질서에 위반하는 정보를 서비스에 공개 또는 게시하는 행위</p><br>
+        <p>• 회사의 동의 없이 영리를 목적으로 서비스를 사용하는 행위</p><br>
+        <p>• 비정상적인 방법으로 토큰 또는 카드를 주고받는 행위</p><br>
+        <p>• 정상적인 서비스 이용이 아닌 투기적 목적으로 거래 등 주고받는 행위</p><br>
+        <p>• 불법 행위에 대한 동기 부여 및 실행에 도움이 되는 용도로 토큰 또는 카드를 사용하는 행위</p><br>
+        <p>• 다단계, 유사 수신 등 불법적인 행위</p><br>
+        <p>• 기타 불법적이거나 부당한 행위</p><br>
+        <p>2. 회원은 관계법, 이 약관의 규정, 이용안내 및 서비스와 관련하여 공지한 주의사항, 회사가 통지하는 사항 등을 준수하여야 하며, 기타 회사의 업무에 방해되는 행위를 하여서는 안됩니다.</p><br><br>
+        <strong style="color: #2b19dd;">제11조 서비스의 제공 및 시스템 제공 등</strong><br>
+        <p>1. 회사는 서비스 및 시스템을 제공함에 있어 범위, 이용 가능 시간 및 횟수 등을 지정할 수 있으며, 회원은 회사가 정하는 서비스 제공 조건에 따라 서비스를 이용할 수 있습니다.</p><br>
+        <p>2. 회사는 컴퓨터 등 정보 통신 설비의 보수 점검, 교체 및 고장, 통신 두절 또는 운영상 합리적인 이유가 있는 경우 서비스의 제공을 일시적으로 중단할 수 있습니다. 이 경우 회사는 제20조에 따른 방법으로 회원에게 통지합니다. 다만, 회사가 사전에 통지할 수 없는 부득이한 사유가 있는 경우 사후에 통지할 수 있습니다.</p><br>
+        <p>3. 회사는 서비스의 제공에 필요한 경우 정기 점검을 실시할 수 있으며, 정기점검시간은 서비스 제공 화면에 공지한 바에 따릅니다. 또한, 정기 점검 시 서비스 이용 일부 또는 전체에 대하여 제한이 발생할 수 있으며, 회사의 고의 또는 과실이 아닌 한 그로 인해 발생한 손해에 대해서는 책임을 지지 않습니다.</p><br>
+        <p>회원이 NFT 발행, 판매, 결제 등 서비스 이용 시 입력 또는 등록한 정보의 정확성에 대한 책임은 회원에게 있으며, 회사는 회원의 잘못으로 인하여 발생하는 문제에 대해서는 책임 지지 않습니다.</p><br>
+        <p>5. 서비스와 연계된 제3자 서비스 등의 장애 또는 점검 등의 사유로 서비스 내 일부 기능에 제한이 발생하는 문제에 대해서는 회사의 고의, 과실이 없는 한 회사는 어떠한 책임도 지지 않습니다. 이 경우, 회사는 회원에게 제20조의 방법으로 해당 사실을 통지합니다.</p><br>
+        <p>6. 서비스는 연중무휴, 1일 24시간 제공함을 원칙으로 합니다.</p><br>
+        <p>7. 서비스와 연계된 제3자의 서비스 등의 장애 또는 점검 등의 사유로 서비스 내 일부 기능에 제한이 발생하는 문제에 대해서는 회사의 고의, 과실이 없는 한 어떠한 책임을 지지 않습니다. 이 경우, 회원에게 해당 사실을 공지 또는 통지합니다.</p><br><br>
+        <strong style="color: #2b19dd;">제12조 NFT 발행, 판매 및 결제의 성질과 목적</strong><br>
+        <p>1. 발행 서비스는 회원이 직접 NFT를 발행하고 관리할 수 있는 기능을 회사가 제공하는 것입니다. 그러나 회사는 발행 서비스를 제공하는 외에 회원의 NFT발행 또는 관리를 대행하거나 위탁받아 운영하지 않습니다.</p><br>
+        <p>2. 판매 서비스는 회사가 회원 각자의 자기 결정에 의하여 회원 상호간에 NFT 거래가 이루어질 수 있도록 온라인 거래 장소(마켓플레이스, Marketplace)를 제공하는 것이며, 결제서비스는 회원 상호 간에 거래에 있어 안전하고 편리한 결제 토큰 전송이 이루어질 수 있는 수단을 제공하는 것입니다. 회원 간 거래와 관련된 책임은 거래 당사자인 회원들 스스로가 부담합니다.</p><br>
+        <p>3. 회원이 서비스 이용에 필요한 디지털 자산 보관 및 관리 및 관련/제반 서비스의 이용은 해당 서비스의 약관에 따르며, 회원은 안정적인 서비스 이용을 위하여 해당 관련/제반 서비스 데이터에 대한 백업 및 저장 의무가 있습니다. 또, 회사는 회원의 부주의로 인한 발생한 해당 관련/제반 서비스 데이터 손실로 인한 손해에 대하여 책임을 부담하지 아니합니다.</p><br><br>
+        <strong style="color: #2b19dd;">제13조 NFT 발행 서비스의 이용</strong><br>
+        <p>1. 회사가 제공하는 NFT 발행 서비스는 블록체인 상에서 취급되는 NFT를 발행하는 것으로 세부적인 서비스의 종류와 내용은 변경될 수 있습니다. 회사는 발행 절차와 방법 등에 대한 사항을 안내하며, 회원은 회사가 공지한 발행에 관한 사항을 사전에 충분히 이해하고 NFT 발행 서비스를 이용하여야 합니다. 회사는 회원이 관련 사항을 충분히 숙지하지 아니하여 발생하는 문제에 대해서는 회사의 고의 또는 과실이 없는 한 어떠한 책임도 지지 않습니다.</p><br>
+        <p>2. 회사는 회원이 다음 각 호의 내용을 포함하여 NFT를 발행한 사실을 직접 인지하였거나 제3자의 신고로 인지한 경우 회사의 확인 ∙ 검토 결과에 따라 별도의 사전 고지 없이 NFT를 서비스 상 노출되지 않게 하고 NFT에 대한 소각을 요청할 수 있으며, 판매 서비스 이용의 제한, 회원자격의 정지 또는 이용계약을 해지할 수 있습니다.</p><br>
+        <p>• 욕설, 비속어, 은어 등이나 타인에게 성적 수치심이나 불쾌감·혐오감을 유발할 수 있는 내용</p><br>
+        <p>• 지역·장애·인종·출신 국가·성별·나이·직업·종교 등을 차별하거나 이에 대한 편견을 조장하는 내용</p><br>
+        <p>• 불법적인 사행성, 도박 관련 내용, 불법 제품 또는 인터넷에서 판매 금지된 물품을 홍보하거나 이를 암시하는 내용</p><br>
+        <p>• 타인의 지식재산권(특허권, 상표권, 저작권 등)을 침해하거나 국내외에서 널리 알려진 타인의 상표, 상호 등을 도용한 내용</p><br>
+        <p>• 투자상품으로 해석되거나 투자 상품성 요소가 내포된 내용</p><br>
+        <p>• 위법 행위에 대한 동기 부여 및 실행에 도움이 되는 내용</p><br>
+        <p>• 특정 인물이나 서비스의 명칭 등을 사칭하는 내용</p><br>
+        <p>• 그 외 회사가 판단했을 때 상식과 사회 통념에 반하는 내용</p><br>
+        <p>• 전항에 따라 NFT가 차단 또는 삭제된 경우와 이로 인해 판매가 취소되거나 중지된 경우, 그 발행 및 판매 서비스에 이용된 블록체인 이용료(Gas Fee)는 환불되지 않으며, 또 당해 NFT 발행자가 NFT의 차단 또는 삭제 등으로 인해 발생한 민형사상 재산 피해에 대한 책임을 부담합니다.</p><br>
+        <p>• 회사는 회원이 간편하게 NFT를 발행하고 관리할 수 있도록 기술을 제공하는 것으로 회원이 직접 NFT를 발행하고 관리하는 것을 원칙으로 하며, 회원의 NFT 발행 및 관리를 대행하거나 위탁하여 운영하지 않습니다.</p><br>
+        <p>3. 발행자가 서비스를 통해 발행한 NFT에 대한 내용, 목적 등에 대한 보증 및 이행 의무는 회원에게 있으며, 회사는 회원이 발행한 NFT에 대하여 어떠한 보증을 하거나 일체의 책임을 지지 않습니다.</p><br><br>
+        <strong style="color: #2b19dd;">제14조 판매의 방식</strong><br>
+        <p>1. 회사가 회원에게 서비스를 제공함에 있어 회원이 고의적으로 또는 과실로 구매 후 환불 신청을 반복하는 등의 행위를 확인하거나 또는 회원의 서비스 부정 사용이 우려되는 경우, 회사는 해당 회원에게 서비스 제공을 일정기간 또는 영구적으로 제한할 수 있습니다. 회원은 이용제한 조치에 대한 이의 제기를 할 수 있으며, 회사는 회원이 이의제기한 사실을 통보 받은 후 2주간의 확인 기간을 거쳐 확인 결과를 회원에게 통지합니다.</p><br><br>
+        <strong style="color: #2b19dd;">제15조 판매 서비스의 이용</strong><br>
+        <p>1. 회원은 회사가 제공하는 방식을 통해 판매서비스를 이용할 수 있습니다. 다만, 회사가 지정하는 경우 판매자가 될 수 있는 별도의 자격요건이 설정될 수 있으며, 회사는 자격요건 등 이용조건을 서비스화면 또는 이메일 등으로 공지합니다.</p><br>
+        <p>2. 판매 서비스를 이용해 NFT를 구매할 때 소요되는 블록체인 이용료(망 수수료, NFT 이전 수수료)는 구매자가 부담하여야 합니다.</p><br>
+        <p>3. 회원이 판매 서비스를 통하여 NFT를 거래하는 경우, 반드시 회사가 제공하는 판매서비스를 통해 거래를 완료하여야 합니다. 회사는 회원 간 직거래로 인하여 발생한 문제에 대하여 책임지지 않습니다.</p><br>
+        <p>4. 판매자가 제공한 판매 정보에 관한 책임은 판매자가 부담합니다.</p><br>
+        <p>5. 회사는 중개 업체이므로 세무 처리의 주체가 아니며, 세금과 관련한 자문을 제공하지 않습니다. NFT 거래로 발생할 수 있는 소득세 등 제세공과 사무는 회원이 직접 확인 후 처리하여야 합니다.</p><br>
+        <p>6. 회사는 판매 서비스를 통한 거래의 안전성과 신뢰성을 위하여 회원자격을 정지하거나 회원의 판매 서비스의 이용을 제한하는 등 필요한 조치를 취할 수 있습니다. 회원자격이 정지된 회원은 서비스 이용에 제한을 받을 수 있습니다. 회사가 회원자격을 정지하거나 판매 서비스의 이용제한, 기타 필요한 조치를 취할 경우 회사는 이 약관에 특별한 규정이 없는 한 사전에 당해 회원에게 서비스화면 또는 SMS, 기타의 방법을 통하여 통보하며, 회원의 연락이 두절되거나 긴급을 요하는 등 부득이 한 경우 선 조치 후 통보할 수 있습니다. 판매 서비스 이용 제한 및 회원자격의 정지는 일시 또는 영구적일 수 있으며, 회원이 소명서를 제출하는 등 회사가 정하는 기준을 충족하는 경우 이를 해소할 수 있습니다.</p><br>
+        <p>7. 회원 재가입 시에도 이전에 부과된 서비스 이용 제한과 회원자격정지 등의 조치는 그대로 유지됩니다.</p><br>
+        <p>8. 판매 서비스 이용이 제한된 회원에게 완료되지 않은 판매가 있는 경우 회사는 구매자의 보호를 위해 판매 중인 NFT가 서비스 상에 노출되지 않도록 할 수 있습니다. 그 이전에 입찰을 한 회원이 있을 경우 판매 서비스 이용이 제한된 회원은 구매자의 보호를 위한 필요 조치를 취해야 합니다. NFT가 판매에 부적합 것으로 밝혀진 경우 판매 서비스 이용이 제한된 회원이 구매자의 손해에 대한 책임을 부담합니다. 이 경우 회사는 손해를 입은 당사자에게 이용이 제한된 회원의 일부 정보를 제공할 수 있습니다.</p><br><br>
+        <strong style="color: #2b19dd;">제16조 대리 및 보증의 부인 / 디지털콘텐츠의 보증</strong><br>
+        <p>1. 회사는 통신 판매 중개자로서 회원 상호간의 거래를 위한 온라인 거래장소(Marketplace)를 제공할 뿐이므로 NFT를 판매하거나 구매하는 회원을 대리하지 않습니다. 또한, 회사의 어떠한 행위도 판매자 또는 구매자를 대리하는 행위로 간주되지 않습니다.</p><br>
+        <p>2. 회사는 판매 서비스를 통하여 이루어지는 회원 간 NFT 판매 및 구매와 관련하여 판매의사 또는 구매의사의 존부 및 진정성, NFT의 가치, 완전성, 안전성, 적법성 및 타인의 권리에 대한 비침해성, 회원이 입력하는 정보 및 그 정보를 통하여 링크된 URL에 게재된 자료의 진실성 등 일체에 대하여 보증하지 아니하며, 이와 관련한 일체의 위험과 책임은 NFT거래 당사자인 회원이 부담합니다.</p><br>
+        <p>3. 회사는 회원이 게재하는 NFT설명 등의 제반 정보를 통제하거나 관리하지 않습니다. 다만, 회사가 회원이 게재한 정보의 내용이 타인의 명예, 권리를 침해하거나 위법하다고 판단하는 경우에 서비스 상 노출제한, 판매취소, 판매중지, 기타 필요한 조치를 취할 수 있습니다.</p><br>
+        <p>4. 회사가 보증책임을 지는 경우 그 보증금액은 어떠한 경우라도 구매자가 지급한 실제 TTC또는 TTM 수량의 범위를 초과하지 않으며, TTC 또는 TTM의 가치의 변동에 따른 손해 등에 대해 회사는 책임을 지지 않습니다.</p><br><br>
+        <strong style="color: #2b19dd;">제17조 결제 서비스의 이용</strong><br>
+        <p>1. 회사는 NFT거래에 사용되는 결제 토큰 및 NFT의 수령, 임시 보관 및 송금 업무로 이루어지는 결제서비스를 제공합니다. 이러한 결제서비스는 중개서비스를 통하여 이루어지는 회원 간의 거래의 안전성과 신뢰성을 도모하고 거래 당사자를 보호하기 위한 목적에서 제공됩니다. 회사는 회원이 정한 조건으로 NFT거래와 결제 토큰 지급 및 수령이 이루어지는 스마트 컨트랙트의 실행을 지원하는 것이므로 판매자 또는 구매자를 대리, 대행하거나 그 이행을 보조하는 것은 아닙니다.</p><br>
+        <p>2. 명시적으로 회원의 직거래를 허용하지 않는 NFT에 대하여 결제서비스를 통하지 않는 직거래를 유도하는 경우, 회사는 당해 거래의 취소, 판매 중지 등 필요한 조치를 취할 수 있습니다.</p><br>
+        <p>3. 회사가 제공하는 결제서비스를 이용하지 않은 거래에 대해 회사는 일체의 책임을 지지 않습니다.</p><br>
+        <p>4. 회사가 제공하는 결제 서비스를 오용, 악용함으로써 사회질서, 미풍양속을 침해하거나 침해할 우려가 있거나, 회사가 결제서비스를 제공하기 어려운 상황이 발생하는 경우 회사는 결제서비스의 일부 또는 전부를 제공하지 않거나 이용을 제한할 수 있습니다.</p><br><br>
+        <strong style="color: #2b19dd;">제18조 판매 관련 수수료</strong><br>
+        <p>1. 회원이 NFT 상품 판매 시 판매금의 30%는 회사 수수료로 책정되어 판매금액 정산할 시 판매금 총액에서 수수료를 제한 금액을 지급합니다.</p><br>
+        <p>2. 서비스 이용 수수료 조정은 회사의 재량이나, 회사는 수수료(율) 변경을 하는 경우 회사는 제8조["회원"에 대한 통지]에 따른 방법으로 최소한 변경 7일 전에 공지합니다.</p><br>
+        <p>3. 회사는 특정조건에 해당하는 경우에는 서비스 이용 수수료를 회원과의 협의에 의하여 정할 수 있습니다.</p><br><br>
+        <strong style="color: #2b19dd;">제19조 서비스의 변경 및 중단</strong><br>
+        <p>1. 회사는 다음과 같은 경우 또는 이에 해당하는 사유가 존재한다고 볼 만한 합리적 이유가 있는 경우에 운영상, 기술상의 필요에 따라 제공하고 있는 전부 또는 일부 서비스를 변경할 수 있습니다.</p><br>
+        <p>• 회사가 안정적인 서비스 제공을 위하여 서비스의 내용, 운영상, 기술상 관리 혹은 변경 혹은 관리가 필요하다고 판단하는 경우</p><br>
+        <p>• 서비스를 이용한 불법적인 행위가 발생한 경우</p><br>
+        <p>• 컴퓨터 등 정보 통신 설비의 보수 점검, 장비의 교체 및 고장, 통신의 두절 등의 사유가 발생한 경우</p><br>
+        <p>• 서비스를 위한 설비 등의 유지 보수 등으로 인한 부득이한 사정이 있는 경우</p><br>
+        <p>• 정전, 제반 설비의 장애 또는 이용량의 폭주 등으로 정상적인 서비스 이용에 지장이 있는 경우 또는 지역 등 범위적인 네트워크 장애가 발생하는 경우</p><br>
+        <p>• 회사의 운영 정책에 반하는 회원의 행위가 있는 경우</p><br>
+        <p>• 경영상 이유 등으로 서비스를 제공할 수 없는 부득이한 사정이 발생한 경우</p><br>
+        <p>• 기타 천재지변, 국가 비상 사태, 각 국가의 법령/정책 상의 규제 또는 제한 등 불가 항력적 사유가 있는 경우</p><br>
+        <p>2. 서비스의 내용, 이용방법, 이용시간에 대하여 변경이 있는 경우에는 변경사유, 변경될 서비스의 내용 및 일시 등을 회사는 제8조["회원"에 대한 통지]에 따른 방법으로 회원에게 사전통지 합니다. 단, 회사가 통제할 수 없는 사유 또는 긴급사유 등으로 인하여 회원에 대한 공지 또는 통지가 불가능한 경우에는 먼저 서비스 내용을 변경한 후 통지할 수 있습니다.</p><br>
+        <p>3. 회사는 제공하는 서비스의 일부 또는 전부를 회사의 정책 및 운영의 필요상 수정, 중단, 변경할 수 있으며, 회원은 서비스 변경에 동의하지 않을 경우 회사에 거부 의사를 표시하고 이용계약을 해지할 수 있습니다. 회사는 본 서비스의 변경, 중단으로 발생하는 문제에 대해서 회사의 고의 또는 과실이 없는 한 어떠한 책임도 지지 않습니다.</p><br>
+    </div>
+    <a href="javascript:closeDialog(true)" class="intergration-submit-btn active" style="position: absolute; bottom: 0; border-radius: 0;">확인</a>
+</div>
+
+<div class="search-filter">
+    <div class="filter-header">
+        <a href="javascript:void(0)" class="left-item">취소</a>
+        <h3 class="center-item">필터</h3>
+        <a href="javascript:setApplyFilter()" class="right-item">적용</a>
+    </div>
+        </div>
+
+<div class="community-comment-content">
+    <div class="header-tag">
+        <h3 class="text-tag">댓글</h3>
+        <a href="javascript:void(0)">
+            <img class="right-tag" src="https://chatong.kr/assets/user/images/ico_close_2.svg" alt="">
+        </a>
+    </div>
+    <div class="comment-content"></div>
+    <div class="input-tag">
+        
+        <div id="comment-input-content" class="pos-re" style="width: 100%;">
+            <textarea id="comment-content" name="" class="community-text-content m0" placeholder="댓글을 입력해주세요." autocomplete="off" style="height: 36px; padding: 7px 50px 0 15px; background-color: #fff;"></textarea>
+                    </div>
+        <img id="private-status" class="right-item pointer" src="https://chatong.kr/assets/user/images/ico_unlock.svg" alt="" onclick="setLockComment(this, '1');">
+    </div>
+</div>
+
+    <div id="moreview-menu">
+        <nav class="navbar">
+                                                <div class="menu-item pointer" onclick="setClickMenuItem(this, '홈', 0);" style="border-top-right-radius: 25px;">
+                        <img src="https://chatong.kr/assets/user/images/ico_minuse.svg" alt="" style="width: 6px; height: 6px;">
+                        <p class="ml-15">홈</p>
+                    </div>
+                
+                                    <div class="menu-item pointer" onclick="setClickMenuItem(this, '알림', 0);">
+                        <img src="https://chatong.kr/assets/user/images/ico_minuse.svg" alt="" style="width: 6px; height: 6px;">
+                        <p class="ml-15">알림</p>
+                    </div>
+                
+                                    <div class="menu-item pointer" onclick="setClickMenuItem(this, '글쓰기', 0);">
+                        <img src="https://chatong.kr/assets/user/images/ico_minuse.svg" alt="" style="width: 6px; height: 6px;">
+                        <p class="ml-15">글쓰기</p>
+                    </div>
+                
+                                    <div class="menu-item pointer" onclick="setClickMenuItem(this, '내차 등록', 0);">
+                        <img src="https://chatong.kr/assets/user/images/ico_minuse.svg" alt="" style="width: 6px; height: 6px;">
+                        <p class="ml-15">내차 등록</p>
+                    </div>
+                            
+                            <div class="menu-item pointer active">
+                    <img src="https://chatong.kr/assets/user/images/ico_right_arrow_1.svg" alt="" style="width: 6px; height: 6px;">
+                    <p class="ml-15">나의 차통</p>
+                </div>
+            
+                            <div class="menu-item pointer" onclick="setClickMenuItem(this, '내차 관리', 0);">
+                    <img src="https://chatong.kr/assets/user/images/ico_minuse.svg" alt="" style="width: 6px; height: 6px;">
+                    <p class="ml-15">내차 관리</p>
+                </div>
+            
+                            <div class="menu-item pointer" onclick="setClickMenuItem(this, '나의 활동', 0);">
+                    <img src="https://chatong.kr/assets/user/images/ico_minuse.svg" alt="" style="width: 6px; height: 6px;">
+                    <p class="ml-15">나의 활동</p>
+                </div>
+            
+                            <div class="menu-item pointer" onclick="setClickMenuItem(this, '나의 리뷰', 0);">
+                    <img src="https://chatong.kr/assets/user/images/ico_minuse.svg" alt="" style="width: 6px; height: 6px;">
+                    <p class="ml-15">나의 리뷰</p>
+                </div>
+            
+                            <div class="menu-item pointer" onclick="setClickMenuItem(this, '시세조회', 0);">
+                    <img src="https://chatong.kr/assets/user/images/ico_minuse.svg" alt="" style="width: 6px; height: 6px;">
+                    <p class="ml-15">시세 조회</p>
+                </div>
+                                                              
+                             
+                  
+                                            <div class="menu-item pointer" onclick="setClickMenuItem(this, '토마토그룹 통합몰', 0);">
+                            <img src="https://chatong.kr/assets/user/images/ico_minuse.svg" alt="" style="width: 6px; height: 6px;">
+                            <p class="ml-15">토마토그룹 통합몰</p>
+                        </div>
+                     
+                            
+                            <div class="menu-item pointer" onclick="setClickMenuItem(this, '공지사항', 0);">
+                    <img src="https://chatong.kr/assets/user/images/ico_minuse.svg" alt="" style="width: 6px; height: 6px;">
+                    <p class="ml-15">공지 사항</p>
+                </div>
+                    </nav>
+    </div>
+   
+    <div class="wrapper">
+                    <header class="header collapsed" id="">
+    
+                
+                
+                
+                
+                
+                                                
+                
+                
+                
+                
+                                    <div class="normal-left-item">
+                <a href="javascript:goBack('https://chatong.kr/', '-1')">
+                    <img src="https://chatong.kr/assets/user/images/ico_back.svg" alt="" style="width: 24px; height: 24px;">
+                </a>
+            </div>
+            <div class="normal-middle-item">나의 차통</div>
+            <div class="normal-right-item">
+                                    <a href="https://chatong.kr/mypage">
+                        <img src="https://chatong.kr/assets/user/images/ico_my.svg" alt="" style="width: 40px; height: 40px;">
+                    </a>
+                
+                <a class="ml-5" href="javascript:setShowLeftMenu(this, '')">
+                    <img src="https://chatong.kr/assets/user/images/ico_menu_unselected.png" alt="" style="width: 20px; height: 20px;">
+                </a>
+             </div>
+        </header>
+<div class="clearfix"></div>
+                 
+                <section id="section"> 
+                    <div class="container">
+                    <div class="padding-15 background-white" style="padding-bottom: 200px;">
+        <div class="mypage-item">
+            <div class="row-item">
+                <div class="left-item">
+                                                                        <img class="avatar" src="https://api.otongtong.net:28443/file/icon/personal_info/profile_img.png" alt="">
+                                                                <p class="text-black-1 ml-10">이민영</p>
+                </div>
+                <a href="javascript:showSettingDialog('로그아웃 하시겠습니까?', '', '', '취소', '확인', 'closeDialog(1);', 'redirectLogOut(true);', 1)" class="btn-action">로그아웃</a>
+            </div>
+        </div>
+        <div class="mypage-item">
+            <div class="row-item mb-15">
+                <div class="left-item">
+                    <p class="text-black-1">코인관리</p>
+                                            <p class="ml-10"> 
+                            <a href="javascript:setConnectTongTongApp('mypage', 'tongtong', '1636503135!usr-dde398e6-95bf-492a-8f06-5d001e8ee97c')" style="color:#222;"><b>자세히보기  ></b></a>
+                        </p>
+                                    </div>
+                                    <a href="javascript:setConnectTongTongApp('mypage', 'tongtong', '1636503135!usr-dde398e6-95bf-492a-8f06-5d001e8ee97c')" id="coin-info" class="btn-action">지갑연동</a>
+                            </div>
+            <div class="row-item mb-8">
+                <div class="left-item">
+                    <img class="icon" src="https://chatong.kr/assets/user/images/ico_ttcoin.svg" alt="">
+                    <p class="text-1 ml-5">통통코인</p>
+                </div>
+                <p id="ttcoin" class="text-black-3">0.0</p>
+            </div>
+            <div class="row-item mb-8">
+                <div class="left-item">
+                    <img class="icon" src="./images/icon/ic_ttco.webp" alt="">
+                    <p class="text-1 ml-5">통통쿠폰</p>
+                </div>
+                <p id="ttco" class="text-black-3">0.0</p>
+            </div>
+            <div class="row-item mb-8">
+                <div class="left-item">
+                    <img class="icon" src="./images/icon/ic_ttr.webp" alt="">
+                    <p class="text-1 ml-5">통통리워드</p>
+                </div>
+                <p id="ttr" class="text-black-3">0.0</p>
+            </div>
+        </div>
+        <div class="mypage-item">
+            <a href="https://chatong.kr/myprofile" class="row-item">
+                <div class="left-item">
+                    <p class="text-black-2">프로필 수정</p>
+                </div>
+                <img class="icon-right" src="https://chatong.kr/assets/user/images/ico_right.svg" alt="">
+            </a>
+        </div>
+        <div class="mypage-item">
+            <a href="https://chatong.kr/request_estimate" class="row-item">
+                <div class="left-item">
+                    <p class="text-black-2">요청한 견적</p>
+                </div>
+                <img class="icon-right" src="https://chatong.kr/assets/user/images/ico_right.svg" alt="">
+            </a>
+        </div>
+        <div class="mypage-item">
+            <a href="javascript:setConnectTongTongApp('mypage', 'charting', '1636503135!usr-dde398e6-95bf-492a-8f06-5d001e8ee97c')" class="row-item">
+                <div class="left-item">
+                    <p class="text-black-2">받은 견적</p>
+                </div>
+                <img class="icon-right" src="https://chatong.kr/assets/user/images/ico_right.svg" alt="">
+            </a>
+        </div>
+
+                <div class="mypage-item">
+            <a href="https://chatong.kr/hashtag_follow" class="row-item">
+                <div class="left-item">
+                    <p class="text-black-2">팔로우 목록</p>
+                </div>
+                <img class="icon-right" src="https://chatong.kr/assets/user/images/ico_right.svg" alt="">
+            </a>
+        </div>
+                                               <div class="mypage-item">
+                    <a href="https://chatong.kr/owner_list" class="row-item">
+                        <div class="left-item">
+                            <p class="text-black-2">보유NFT 목록</p>
+                        </div>
+                        <img class="icon-right" src="https://chatong.kr/assets/user/images/ico_right.svg" alt="">
+                    </a>
+                </div>
+                            <div class="mypage-item">
+            <a href="https://chatong.kr/policy_onid" class="row-item">
+                <div class="left-item">
+                    <p class="text-black-2">개인정보 처리방침</p>
+                </div>
+                <img class="icon-right" src="https://chatong.kr/assets/user/images/ico_right.svg" alt="">
+            </a>
+        </div>
+        <div class="mypage-item">
+            <a href="javascript:showSettingDialog('회원탈퇴를 하시겠습니까?', '', '', '취소', '확인', 'closeDialog(1);', 'setEscapeMember();', 1)" class="row-item">
+                <div class="left-item">
+                    <p class="text-black-2">회원 탈퇴</p>
+                </div>
+                <img class="icon-right" src="https://chatong.kr/assets/user/images/ico_right.svg" alt="">
+            </a>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        loadJavascript("https://chatong.kr/assets/user/js/others/myinfo/mypage.js?ver=1684232607", null);
+    </script>
+            </div>
+        </section>
+         
+                                                    </div>
+</body>
+
+</html>

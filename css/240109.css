@@ -1,0 +1,386 @@
+@charset "utf-8";
+
+.search-middle-item.active{
+    width: calc(100% - 170px);
+}
+.header{justify-content: space-between;}
+
+
+/*240205*/
+
+.login_tit1{margin-top: 35px; font-size: 20px;    color: #313643; text-align: center; font-weight: bold;line-height: 1.5;}
+.login_tit2{
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.3em;
+    color: #313643;
+    text-align: center;
+}
+
+.login_btns {display: flex; flex-direction: column;}
+.login-pwd-txt{ margin-top: 10px; font-size: 1.1em;  letter-spacing: -1px; color: #313643; text-align: center; font-weight: normal;}
+.login-pwd-reset{font-size: 1.1em; color: #ff0000;    text-align: center; margin-top: 10px; font-weight: normal; letter-spacing: -1px;}
+
+.login_pwd_forgot{width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 30px;}
+
+.login_btns .common-btn-radius{border-radius: 4px; font-size: 1.2em; }
+.login_btns .common-btn-radius:first-child{background: #2b19dd; color:#fff;}
+.login_btns .common-btn-radius:last-child{margin-top: 5px;}
+
+.n_account{margin-top: 50px; font-size: 1em; text-align: center; color:#000; font-weight: normal;}
+.join_link{text-align: center; color:#2b19dd; font-weight: bold; display: block; margin-top: 10px;}
+
+.pwd_reset{margin-top: 20px; width: 100%; display: flex; flex-direction: column;}
+.pwd_reset div{width: 100%; display: flex; flex-direction: row;}
+
+.pwd_reset div.pr_1 select{width: 24%; margin-right: 1%; padding:0 5px; border-radius: 6px; background: #f8f8f8 !important;  border: solid 1px #f1f1f1; font-size: .8em; text-align: center;}
+.pwd_reset div.pr_1 input{margin-right: 1%; width: 48%; padding:0 15px; background: #f8f8f8;  border: solid 1px #f1f1f1; border-radius: 6px;}
+.pwd_reset div.pr_1 button{padding:5px 0px; width: 26%; background: #2b19dd; color:#fff; border-radius: 6px; border:none; padding:0 15px; height: 44px; box-sizing: border-box; line-height:14px; font-size: .8em;}
+
+.pwd_reset div.pr_2{margin-top: 5px;}
+.pwd_reset div.pr_2 > div{position: relative; width: 73%; margin-right: 1%; }
+.pwd_reset div.pr_2 > div span.pr_2_time{position: absolute; right:15px; top:50%; transform: translateY(-50%); color:#000;}
+.pwd_reset div.pr_2 input{ width: 100%; padding:0 15px; background: #f8f8f8;  border: solid 1px #f1f1f1; border-radius: 6px; height: 44px;}
+.pwd_reset div.pr_2 button{padding:0px; width: 26%; background: #2b19dd; color:#fff; border-radius: 6px; border:none;  height: 44px; line-height: 44px;}
+
+.pwd_reset div.pr_3{margin-top: 5px;}
+.pwd_reset div.pr_3 input{width: 100%;  padding:0 15px; background: #f8f8f8;  border: solid 1px #f1f1f1; border-radius: 6px; height: 44px;}
+
+.pwd_reset > p{letter-spacing: -1px;}
+.pwd_reset > span.none_pwd{color:#ff0000; display: none; }
+.pwd_reset .btn-next{background: #2b19dd; color:#fff; text-align: center; height: 44px;border-radius: 6px; margin-top: 30px;  border:none;  }
+
+/*modal*/
+#exampleModal .modal-dialog{top:30%;}
+#exampleModal .modal-body{text-align: center; font-size: 1.2em; margin:20px 0 0; letter-spacing: -1px; font-weight: bold;}
+#exampleModal .modal-footer{border-top:none;}
+#exampleModal .modal-footer .btn{text-align: center; width: 100%; background:#2b19dd; color:#fff; border-radius: 6px; height: 50px; max-width: 300px; margin:0 auto; display: block;}
+
+
+/*240215 수정추가*/
+.login-pwd-wrong{font-size: 1.1em; color: #ff0000;    text-align: center; margin-top: 5px; font-weight: normal; display: block; letter-spacing: -1px;}
+
+.pwd_reset div.pr_1 input{width: 74%;}
+.pwd_reset div.pr_1 button{font-size: 1em;}
+
+
+
+/*240223 수정추가*/
+.dialog-notice {
+    position: fixed;
+    display: none; 
+    background: rgba(0,0,0,0.8);
+    z-index: 3900;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    border-radius: 5px; 
+    top:0px;
+    display: flex;
+    bottom: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dialog-notice .notice-content div b.red{color:#ff3232;}
+
+#main_popup{background: #fff; padding:24px 15px 15px; margin-top: 50%; width: 80%;  border-radius: 6px; text-align: center;} 
+
+#main_popup h4{font-weight: bold; font-size: 1.2em; line-height: 1.4em; margin-bottom: 20px;}
+#main_popup h4 b.red{color:#ff3232;}
+#main_popup h4 b.blue{color:#2b19dd;}
+
+#main_popup .main_popup_links{display: flex; flex-direction: column; }
+
+#main_popup .main_popup_links span{border-radius: 6px; height: 50px; line-height: 50px; font-size: 1.15em; font-weight: bold; cursor: pointer;}
+#main_popup .main_popup_links span:first-child{background: #2b19dd; color:#fff; }
+#main_popup .main_popup_links span:last-child{background: #ebebeb; color:#747474;}
+
+.container2{
+    max-width: 500px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.c_tit{font-size: 1em; color:#222; font-weight: bold;}
+
+#main_cont1{padding:30px 15px; display: flex; flex-direction: column;}
+#main_cont1 > p{text-align: center; font-weight: bold; font-size: 1.45em; margin-bottom: 20px;}
+
+#main_cont1 div > input{border:2px solid #000; border-radius: 10px; text-align: center; margin-bottom: 20px; line-height: 70px; height: 70px; font-size: 2em; background: #f6f6f8; width: 100%; padding:0 10%;}
+
+#main_cont1 div{position: relative; width: 100%;}
+#main_cont1 div::before{
+    background: url(../images/number_circle.png)no-repeat;
+    position: absolute;
+    content: '';
+    right:15px; top:43%; transform: translateY(-50%); width: 20px; height: 20px;
+    z-index:1000;
+}
+#main_cont1 div::after{
+    background: url(../images/number_circle.png)no-repeat;
+    position: absolute;
+    content: '';     z-index:1000;
+    left:15px; top:43%; transform: translateY(-50%); width: 20px; height: 20px;
+}
+
+#main_cont1 div > input::placeholder{font-size: 1em;  margin:0 auto;}
+#main_cont1 > button{background: #2b19dd; color:#fff; border:none; border-radius: 6px; height:50px;  font-size: 1em; font-weight: bold;}
+
+
+/*ttco benefit*/
+#ttco_benefit{padding-top: 30px; text-align: center;}
+#ttco_benefit h4{color:#222; font-weight: bold; font-size: 1.1em; margin-bottom: 10px;}
+#ttco_benefit div{display: flex; flex-direction: column; align-items: center; }
+#ttco_benefit div > p{width: 100%; font-size: 1.1em; letter-spacing: -1px;  }
+
+.ttco_line{
+    display: block; height: 8px; background: #f6f5f6; width: 100%; border:none; margin-bottom: 30px;
+}
+
+#ttco_benefit2 ul{padding:0 15px; width: 100%; display: flex; flex-direction: column;}
+#ttco_benefit2 ul li{ width: 100%; display: flex; flex-direction: row; justify-content: space-between;  border-bottom: 1px solid #f8f8f8; padding-bottom: 10px; margin-bottom: 10px;}
+#ttco_benefit2 ul li .benefit_txt{display: flex; width: 100%; flex-direction: column;}
+#ttco_benefit2 ul li .benefit_txt_top{display: flex; flex-direction: row; justify-content: flex-start; width: 100%; align-items: center;}
+#ttco_benefit2 ul li .benefit_txt_top img{margin-right: 10px; width: 28px; height: 28px;}
+#ttco_benefit2 ul li .benefit_txt_top .benefit_tit{font-size: 1.1em; font-weight: bold; color:#000;}
+
+#ttco_benefit2 ul li .benefit_txt .benefit_detail{
+    color:#969696; margin-top: 3px; font-weight: 500;
+}
+
+#ttco_benefit2 ul li .benefit_btn{background: #c00202; color:#fff; border-radius: 4px;height: 30px; line-height: 28px; width: 95px; text-align: center; font-weight: bold; border:none; display: block; box-sizing: border-box; }
+
+
+#registration_number {padding:45px 15px 0;}
+#registration_number h4{color: #222; font-size: 1.3em; font-weight: bold; text-align: center; line-height: 1.4em; margin-bottom: 40px;}
+
+#registration_number ul{display: flex; width: 100%; flex-direction: column;}
+#registration_number ul li{display: flex; flex-direction: row; width: 100%; justify-content: space-between;  }
+#registration_number ul li label{font-size: 1.1em; color:#222; margin-top: 10px;}
+#registration_number ul li >input, #registration_number ul li div input{min-width: 280px; height: 45px; border-radius: 5px; background: #f7f7f8; padding: 10px 15px; border: none; margin-bottom: 8px;}
+#registration_number ul li div span.blue{text-decoration: underline; color:#2b19dd; margin-bottom: 10px; font-size: 1em;}
+
+
+#registration_number ul li div{display:flex; flex-direction: column; align-items: flex-end;}
+#registration_number ul li div span{letter-spacing: -1px;}
+
+@media screen and (min-width:500px){
+    #registration_number ul li >input, #registration_number ul li div input{min-width: 380px;}
+}
+
+
+#my-car-price{padding:30px 15px; box-sizing: border-box;}
+#my-car-price h3{color: #222; font-size: 1.3em; font-weight: bold; text-align: center; line-height: 1.4em; margin-bottom: 10px;}
+#my-car-price p{color:#777; font-size: 1em; margin-bottom: 20px; text-align: center;}
+
+#my-car-price .carSuggestionSwiper{padding:10px 6px;}
+#my-car-price .carSuggestionSwiper .swiper-wrapper{height: auto;}
+#my-car-price .carSuggestionSwiper .swiper-slide{
+    box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding:10px;
+    border-radius: 12px;
+}
+
+#my-car-price .carSuggestionSwiper .swiper-slide .vi_car{position:relative; width: 100%; }
+#my-car-price .carSuggestionSwiper .swiper-slide .vi_car .car{width: 100%; height: 120px; object-fit: contain;}
+#my-car-price .carSuggestionSwiper .swiper-slide .heart{position: absolute; right:0; bottom:10px; border:1px solid #eee; border-radius: 50%;}
+
+#my-car-price .carSuggestionSwiper .swiper-slide .vi_txt{margin-bottom: 20px; }
+#my-car-price .carSuggestionSwiper .swiper-slide .vi_txt h4{color:#222; font-size: 1.1em; margin-bottom: 3px; font-weight: bold;}
+#my-car-price .carSuggestionSwiper .swiper-slide .vi_txt p{text-align: left; color:#000; font-size: 0.95em; margin-bottom: 3px;}
+#my-car-price .carSuggestionSwiper .swiper-slide .vi_txt p:last-child{font-size: 0.85em; color:#777777;}
+
+#my-car-price .carSuggestionSwiper .swiper-slide .vi_price{width: 100%; display: flex; justify-content: space-between; align-items: center;}
+#my-car-price .carSuggestionSwiper .swiper-slide .vi_price div{display: flex; flex-direction: column;}
+#my-car-price .carSuggestionSwiper .swiper-slide .vi_price div span{font-weight: bold; font-size: 0.9em; letter-spacing: -1px;}
+#my-car-price .carSuggestionSwiper .swiper-slide .vi_price div span b.blue{color:#2b19dd; font-size: 1em;}
+#my-car-price .carSuggestionSwiper .swiper-slide .vi_price div span.vpp{font-size: 1.2em; letter-spacing: -1px;}
+
+/*240226 수정사항*/
+*{  font-family: NotoSansCJKKR;}
+
+#main_popup{position: relative; padding:40px 15px 25px; position:absolute; bottom: 0px; 
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 0px; width: 100%; border-bottom-left-radius: 0px; }
+#main_popup h4{font-size: 1.15em; }
+.notice-header-xx{
+    color: #000;
+    font-size: 30px;
+    line-height: 30px;
+    display: inline-block;
+    position: absolute;
+    right:20px;
+    top:10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.notice-header-x{border:none;  font-size: 30px; cursor: pointer;}
+.benefit_btn{cursor: pointer;}
+
+#dialog-app{width: 100%; }
+#dialog-app .modal-dialog{max-width: 400px; width: 100%; margin: 0 auto; min-width: 300px;
+    top: 50%; transform: translate(-50%, -50%); left:50%; width: 100%; position: absolute; }
+#dialog-app .modal-dialog .modal-body{padding: 30px 20px 20px;}
+#dialog-app .modal-dialog .modal-body p{text-align: center; font-size: 1.15em}
+#dialog-app .modal-dialog .modal-content{box-sizing: border-box; width: 100%;}
+#dialog-app .modal-dialog .modal-footer{border-top: none; padding-top: 0px;}
+#dialog-app .modal-dialog .modal-footer button{width: 100%; background: #2b19dd; color:#fff; height: 40px; }
+
+@media screen and (max-width:480px){
+    #dialog-app .modal-dialog{max-width: 300px; margin:0 auto;}
+}
+
+#main_cont1 > p{  color:#222; font-weight: bold; letter-spacing: -1px;}
+
+#main_cont1 div > input{font-size: 44px; font-weight: bold;  }
+#main_cont1 div > input::placeholder{color:#e5e6ed; font-weight: bold; font-size: 44px;  }
+
+
+/*240226 수정*/
+#main_popup{position:absolute; width: 100%; max-width: 500px; margin-bottom: 50px; z-index:1000;}
+#mySidenav{display: none;}
+#tomatoMobile{display: block !important; max-width: 500px;}
+
+
+/*240304 수정*/
+.carSuggestionSwiper .vi_txt > p.vt_sec_txt{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical; 
+}
+.carSuggestionSwiper .vi_txt > h4, .carSuggestionSwiper .vi_txt > p.vt_last_txt{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; 
+}
+
+#my-car-price .carSuggestionSwiper .swiper-slide{height: 350px;}
+#my-car-price .carSuggestionSwiper .swiper-slide .vi_car .car{object-fit: cover;}
+#my-car-price .carSuggestionSwiper .swiper-slide{justify-content: space-between;}
+
+#my-car-price .carSuggestionSwiper .swiper-slide .heart{right:0px; bottom:0px;}
+#my-car-price .carSuggestionSwiper .swiper-slide .vi_txt{margin-bottom: 0px;}
+
+
+
+#my-car-price .carSuggestionSwiper .swiper-slide .vi_price div span.vpp{font-size: 1em;}
+#my-car-price .carSuggestionSwiper .swiper-slide .vi_price div.vvv{display: flex; flex-direction: row;
+}
+#my-car-price .carSuggestionSwiper .swiper-slide .vi_price div.vvvvv{display: flex; flex-direction: row;}
+
+.v2{border:1px solid #ddd; border-radius: 50%; margin-right:5px; }
+.v3{width: 35px; height: 35px; }
+
+@media screen and (max-width:380px){
+    #my-car-price .carSuggestionSwiper .swiper-slide .vi_price div.vvv{display: flex; flex-direction: column;
+    }
+}
+@media screen and (max-width:340px){
+    #my-car-price .carSuggestionSwiper .swiper-slide .vi_price div.vvv{display: flex; flex-direction: column;
+    }
+    #my-car-price .carSuggestionSwiper .swiper-slide .vi_price div.vvvvv{display: flex; flex-direction: column;}
+
+    .vvvvv .v2{border:1psx solid #ddd; margin-right: 0px; border-radius: 50%; width: 35px; height: 35px; margin-bottom: 5px;}
+}
+
+
+/*230305 수정*/
+@media screen and (max-width:380px){
+    #registration_number ul li >input, #registration_number ul li div input{
+        min-width: 250px;
+    }
+    #main_cont1 div > input,
+    #main_cont1 div > input::placeholder{font-size: 30px; }
+}
+
+@media screen and (max-width:360px){
+    .header .normal-middle-item{font-size: 1.2em;}
+    #registration_number ul li{
+        flex-direction: column;
+    }
+    #registration_number ul li div{align-items: flex-start;}
+    #registration_number ul li div input{width: 100%;}
+
+    .only_mobile{display: none;}
+
+    #main_cont1 div > input,
+    #main_cont1 div > input::placeholder{font-size: 30px; }
+   
+}
+
+@media screen and (max-width:310px){
+    .header .normal-middle-item{font-size: 1em;}
+    #registration_number ul li{
+        flex-direction: column;
+    }
+    #registration_number ul li div{align-items: flex-start;}
+    #registration_number ul li div input{width: 100%;}
+
+    .only_mobile{display: none;}
+    #registration_number ul li div span{letter-spacing: -1.5px;}
+
+    .search-middle-item.home-active > p{display: none;}
+    #main_cont1 div > input{font-size:26px; padding:0 15%;}
+    #main_cont1 div > input::placeholder{font-size: 26px;}
+    #main_cont1 > p{font-size: 1.2em;}
+
+    .v-detail-info-2 > div:first-child{flex-direction: column; align-items: flex-start;}
+    .option-btn.inactive{margin-bottom: 5px;}
+
+    #ttco_benefit2 ul li .benefit_txt .benefit_detail{letter-spacing: -1px; font-size: .9em;}
+    #ttco_benefit2 ul li .benefit_txt_top .benefit_tit{letter-spacing: -1px;}
+    #ttco_benefit2 ul li .benefit_btn{font-size: .95em; }
+
+    .content-container{flex-direction: column;}
+    .content-container .content-item{width: 100%;}
+    .content-container .content-item .description-1{height: 100%;}
+}
+
+
+
+#registration_number{padding-bottom: 100px;}
+
+.v-g-c{display: none;}
+.v-i-c{padding-top: 0px;}
+
+#ttco_benefit div{padding:0 15px;}
+
+.search-middle-item.active{width: 100%;}
+
+#my-car-price .carSuggestionSwiper .swiper-slide .vi_txt{display: flex; flex-direction: column; width: 100%;}
+
+/*240306*/
+.icon-heart, .icon-heart_f{
+    border-radius: 50%; border:1px solid #ddd; 
+    width: 34px;    height: 34px;    position: absolute;    bottom: 10px;    right: 10px;     z-index: 10;
+}
+
+
+/*240313*/
+#main_cont1 div > input:-webkit-autofill::first-line {
+    font-size: 44px;
+}
+
+/*240315*/
+.ttco_benefit_section{
+    overflow-y: scroll; padding-bottom: 40px;
+}
+
+#ttco_benefit2{padding-bottom: 40px;}

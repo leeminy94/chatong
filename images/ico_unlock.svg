@@ -1,0 +1,8 @@
+<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="2.5" y="6.5" width="17" height="15" rx="3.5" stroke="#DEDEDE"/>
+    <mask id="a" fill="#fff">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 15.599A2.999 2.999 0 0 0 11 10a3 3 0 0 0-1.5 5.599V17.5a1.5 1.5 0 0 0 3 0v-1.901z"/>
+    </mask>
+    <path d="m12.5 15.599-.5-.866-.5.289v.577h1zm-3 0h1v-.577l-.5-.289-.5.866zM13 13c0 .739-.4 1.386-1 1.733l1 1.731c1.194-.69 2-1.982 2-3.464h-2zm-2-2a2 2 0 0 1 2 2h2a4 4 0 0 0-4-4v2zm-2 2a2 2 0 0 1 2-2V9a4 4 0 0 0-4 4h2zm1 1.733c-.6-.347-1-.994-1-1.733H7c0 1.482.806 2.774 2 3.464l1-1.731zm.5 2.767v-1.901h-2V17.5h2zm.5.5a.5.5 0 0 1-.5-.5h-2A2.5 2.5 0 0 0 11 20v-2zm.5-.5a.5.5 0 0 1-.5.5v2a2.5 2.5 0 0 0 2.5-2.5h-2zm0-1.901V17.5h2v-1.901h-2z" fill="#DEDEDE" mask="url(#a)"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.498 3.058A4 4 0 0 0 7 5v1h5.866l.577 1H6V5a5 5 0 0 1 9.364-2.442l-.866.5z" fill="#DEDEDE"/>
+</svg>
